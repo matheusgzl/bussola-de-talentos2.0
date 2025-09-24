@@ -283,41 +283,89 @@
     <!-- Product Section -->
     <section id="product" class="product">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="product-showcase animate-on-scroll">
-                        <div class="device-container">
-                            <div class="device-mockup">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div class="screen-effect"></div>
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title animate-on-scroll">Escolha Seu Plano de Transformação</h2>
+                    <p class="section-subtitle animate-on-scroll">Opções para todos os perfis e necessidades</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- Plano Básico -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card basic animate-on-scroll">
+                        <div class="plan-header">
+                            <h3>Básico</h3>
+                            <div class="plan-price">
+                                <span class="price-large">GRÁTIS</span>
                             </div>
+                            <p class="plan-subtitle">Experimente nosso sistema</p>
                         </div>
-                        <h4 style="color: var(--neon-green); margin-bottom: 1rem;">App + Relatório + IA Avançada</h4>
-                        <p style="color: var(--text-gray);">Tecnologia de ponta para descobrir seus talentos</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i>Teste dos talentos (1 vez)</li>
+                            <li><i class="fas fa-check"></i>Acesso aos 10 principais talentos</li>
+                            <li><i class="fas fa-check"></i>Relatório básico</li>
+                            <li><i class="fas fa-check"></i>Suporte por email</li>
+                        </ul>
+                        <button class="btn btn-outline-cta" onclick="openCheckout('basic')">
+                            <i class="fas fa-play me-2"></i>Começar Grátis
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="animate-on-scroll">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text-white);">Kit Completo <span style="color: var(--neon-green);">Bússola de Talentos</span></h2>
-                        <ul class="list-unstyled mb-4 product-features">
-                            <li><i class="fas fa-check-circle"></i>Teste completo de personalidade com IA avançada</li>
-                            <li><i class="fas fa-check-circle"></i>Relatório detalhado com suas principais habilidades</li>
-                            <li><i class="fas fa-check-circle"></i>Sugestões de carreiras ideais para seu perfil</li>
-                            <li><i class="fas fa-check-circle"></i>Plano de desenvolvimento personalizado</li>
-                            <li><i class="fas fa-check-circle"></i>3 sessões de coaching premium incluídas</li>
-                            <li><i class="fas fa-check-circle"></i>Acesso vitalício à plataforma + atualizações</li>
-                            <li><i class="fas fa-check-circle"></i>Comunidade exclusiva de talentos</li>
-                        </ul>
-                        <div class="price-container">
-                            <span class="price-old">De R$ 497</span>
-                            <span class="price">R$ 197</span>
+
+                <!-- Plano Premium (Destaque) -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card premium featured animate-on-scroll">
+                        <div class="popular-badge">MAIS POPULAR</div>
+                        <div class="plan-header">
+                            <h3>Premium</h3>
+                            <div class="plan-price">
+                                <span class="price-old">De R$ 997</span>
+                                <span class="price-large">R$ 297</span>
+                                <span class="discount-badge">70% OFF</span>
+                            </div>
+                            <p class="plan-subtitle">Transformação completa individual</p>
                         </div>
-                        <button class="btn btn-cta btn-lg" onclick="openCheckout()">
-                            <i class="fas fa-shopping-cart me-2"></i>Comprar Agora - 60% OFF
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i>Curso completo com 50+ técnicas</li>
+                            <li><i class="fas fa-check"></i>App exclusivo com timer Pomodoro</li>
+                            <li><i class="fas fa-check"></i>Templates de planejamento</li>
+                            <li><i class="fas fa-check"></i>Protocolo de biohacking</li>
+                            <li><i class="fas fa-check"></i>6 meses de mentoria em grupo</li>
+                            <li><i class="fas fa-check"></i>Comunidade exclusiva</li>
+                            <li><i class="fas fa-check"></i>Atualizações vitalícias</li>
+                        </ul>
+                        <button class="btn btn-cta" onclick="openCheckout('premium')">
+                            <i class="fas fa-bolt me-2"></i>Comprar Agora
                         </button>
-                        <p class="mt-3" style="font-size: 0.9rem; color: var(--text-muted);">
-                            <i class="fas fa-shield-alt me-1" style="color: var(--neon-green);"></i>Garantia de 30 dias ou seu dinheiro de volta
+                        <p class="guarantee">
+                            <i class="fas fa-shield-alt me-1"></i>Garantia de 60 dias
                         </p>
+                    </div>
+                </div>
+
+                <!-- Plano Business -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card business animate-on-scroll">
+                        <div class="plan-header">
+                            <h3>Business</h3>
+                            <div class="plan-price">
+                                <span class="price-large">R$ 149,90</span>
+                                <span class="price-period">/mês</span>
+                            </div>
+                            <p class="plan-subtitle">Para empresas e equipes</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i>Até 50 usuários</li>
+                            <li><i class="fas fa-check"></i>Painel corporativo de talentos</li>
+                            <li><i class="fas fa-check"></i>Relatórios de equipe</li>
+                            <li><i class="fas fa-check"></i>Consultor dedicado</li>
+                            <li><i class="fas fa-check"></i>Treinamentos personalizados</li>
+                            <li><i class="fas fa-check"></i>Integração com RH</li>
+                        </ul>
+                        <button class="btn btn-business-cta" onclick="openCheckout('business')">
+                            <i class="fas fa-building me-2"></i>Solicitar Demo
+                        </button>
                     </div>
                 </div>
             </div>
