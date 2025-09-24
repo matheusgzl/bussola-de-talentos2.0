@@ -555,6 +555,11 @@
             box-shadow: 0 0 15px var(--neon-green);
         }
 
+        #urgencyBadge {
+            background-image: linear-gradient(to right, #FE6F33, #F7911F);
+            margin-left: 20px;
+        }
+
         /* Footer */
         .footer {
             background: var(--primary-dark);
