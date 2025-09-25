@@ -295,7 +295,7 @@
             right: 0;
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
-            box-shadow: 0 0 10px var(--neon-green);
+            box-shadow: 0 0 5px var(--neon-green);
         }
 
         .section-title {
@@ -365,7 +365,7 @@
             color: var(--neon-green);
             margin-bottom: 1rem;
             animation: pulse 2s infinite;
-            text-shadow: 0 0 15px var(--neon-green);
+            text-shadow: 0 0 5px var(--neon-green);
         }
 
         .feature-card h3 {
@@ -654,7 +654,6 @@
             height: 3px;
             background: linear-gradient(90deg, var(--neon-green), var(--light-green));
             box-shadow: 0 0 10px var(--neon-green);
-            background-size: 600% 600%;
             animation: borderGlow 6s ease infinite;
         }
 
@@ -860,7 +859,7 @@
         .highlight-pulse {
             color: var(--neon-green);
             animation: pulse 2s infinite;
-            text-shadow: 0 0 15px var(--neon-green);
+            text-shadow: 0 0 5px var(--neon-green);
         }
 
         .desire-grid {
@@ -877,6 +876,7 @@
             border: 2px solid transparent;
             position: relative;
             overflow: hidden;
+            height: 100%;
         }
 
         .pain-point {
@@ -924,7 +924,7 @@
 
         .solution-point .desire-icon {
             color: var(--neon-green);
-            text-shadow: 0 0 15px var(--neon-green);
+            text-shadow: 0 0 10px var(--neon-green);
         }
 
         .desire-card h4 {
@@ -974,25 +974,25 @@
         }
 
         .revelation-box {
-            background: linear-gradient(145deg, #1a1a2e, #16213e);
+            background: #1a1a2e;
             border-radius: 20px;
             padding: 3rem;
             margin: 3rem 0;
-            border: 2px solid var(--neon-green);
+            border: 2px solid #fbbf24;
             box-shadow: 0 0 30px var(--glow-green);
             position: relative;
         }
 
         .revelation-box h3 {
-            color: #ff4757;
+            color: #f43f5e;
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            text-shadow: 0 0 10px #ff4757;
+            text-shadow: 0 0 10px #f43f5e;
         }
 
         .revelation-text {
             font-size: 1.2rem;
-            color: var(--text-white);
+            color: #e2e8f0;
             margin-bottom: 2rem;
             line-height: 1.6;
         }
@@ -1013,8 +1013,8 @@
             display: block;
             font-size: 2.5rem;
             font-weight: bold;
-            color: #ff4757;
-            text-shadow: 0 0 15px #ff4757;
+            color: #facc15;
+            text-shadow: 0 0 15px #facc15;
         }
 
         .stat-text {
@@ -1036,7 +1036,7 @@
             color: var(--neon-green);
             font-size: 1.8rem;
             margin-bottom: 2rem;
-            text-shadow: 0 0 10px var(--neon-green);
+            text-shadow: 0 0 3px var(--neon-green);
         }
 
         .pillars-grid {
