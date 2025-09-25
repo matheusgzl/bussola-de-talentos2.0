@@ -340,7 +340,7 @@
             border-color: var(--neon-green);
         }
 
-                /* Garante que todas as colunas tenham a mesma altura */
+        /* Garante que todas as colunas tenham a mesma altura */
         .features .row {
             display: flex;
             flex-wrap: wrap;
@@ -376,6 +376,7 @@
 
         .feature-card p {
             color: var(--text-gray);
+            padding-top: 20px;
         }
 
         /* Product Section */
