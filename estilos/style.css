@@ -33,7 +33,7 @@
 
         @keyframes pulse {
             0% { transform: scale(1); box-shadow: 0 0 0 0 var(--glow-green); }
-            70% { transform: scale(1.07); box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
         }
 
@@ -211,29 +211,6 @@
             overflow: hidden;
         }
 
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
-            }
-            100% {
-                box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.09);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
 
         .btn-cta::before {
             content: '';
@@ -289,22 +266,6 @@
         .particle:nth-child(4) { bottom: 10%; right: 10%; animation-delay: 1.5s; }
         .particle:nth-child(5) { top: 50%; left: 5%; animation-delay: 0.5s; }
         .particle:nth-child(6) { top: 30%; right: 5%; animation-delay: 2.5s; }
-
-        @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-        }
-
-        @keyframes pulse {
-        0%, 100% {
-            transform: scale(1);
-            opacity: 1.6;
-        }
-        50% {
-            transform: scale(1.2);
-            opacity: 1.6;
-        }
-        }
 
 
         /* Features Section */
@@ -1126,33 +1087,7 @@
             margin: 3rem 0;
             border: 3px solid #fbbf24;
             box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-            animation: pulse 1.5s infinite;
-            overflow: hidden; /* Impede que o conteúdo ultrapasse */
-            position: relative; /* Necessário se for usar pseudo-elementos */
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
-            }
-            100% {
-                box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.09);
-            }
-            100% {
-                transform: scale(1);
-            }
+            animation: pulse 2s infinite;
         }
 
         .scarcity-header {
