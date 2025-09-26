@@ -697,18 +697,20 @@
         }
 
         .step-number {
-            width: 160px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
+            background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            margin: 10px 10px;
-            background: linear-gradient(45deg, var(--neon-green), var(--light-green));
-            color: var(--text-white);
+            color: var(--primary-dark);
+            margin-right: 1.5rem;
+            flex-shrink: 0;
             box-shadow: 0 8px 20px var(--glow-green);
         }
 
