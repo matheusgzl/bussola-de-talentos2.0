@@ -1099,8 +1099,13 @@
         /* Responsive adjustments for about section */
         @media (max-width: 767px) {
             .compass-container {
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
+            }
+            
+            .bussola-visual {
+                height: 250px;
+                margin-bottom: 1rem;
             }
             
             .works-steps {
@@ -1119,10 +1124,39 @@
             .domain-card-compact {
                 flex-direction: column;
                 text-align: center;
+                padding: 0.8rem;
             }
 
             .domain-icon-compact {
-                margin-bottom: 1rem;
+                margin-bottom: 0.8rem;
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            
+            .about-bussola {
+                padding: 1.5rem 0;
+            }
+            
+            .content-title {
+                font-size: 1.4rem;
+            }
+            
+            .content-description {
+                font-size: 0.9rem;
+            }
+
+            .domain-content h4 {
+                font-size: 1rem;
+            }
+
+            .domain-content .domain-description {
+                font-size: 0.8rem;
+            }
+
+            .domain-content .talent-tag {
+                font-size: 0.65rem;
+                padding: 0.15rem 0.5rem;
             }
         }
 
@@ -1324,25 +1358,75 @@
             text-shadow: 0 0 10px var(--neon-green);
         }
 
-        /* Responsive adjustments */
+        /* Responsive adjustments for desire section */
         @media (max-width: 767px) {
-            .hero {
-                padding-top: 100px;
-                min-height: 90vh;
+            .desire-title {
+                font-size: 1.4rem;
+                line-height: 1.2;
             }
             
-            .hero h1 {
-                font-size: 2rem;
-                margin-bottom: 1.5rem;
+            .desire-subtitle {
+                font-size: 0.9rem;
             }
             
-            .hero p {
+            .transformation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .question-item span {
+                font-size: 0.8rem;
+            }
+            
+            .desire-section {
+                padding: 1.5rem 0;
+            }
+            
+            .desire-card {
+                padding: 1.5rem 0.8rem;
+            }
+            
+            .shock-revelation {
+                padding: 1.5rem 0;
+            }
+            
+            .shock-card {
+                padding: 1.5rem 0.8rem;
+            }
+            
+            .shock-title {
+                font-size: 1.4rem;
+            }
+            
+            .shock-subtitle {
                 font-size: 1rem;
             }
-            
-            .tech-compass {
-                width: 250px;
-                height: 250px;
+
+            .question-title {
+                font-size: 1.2rem;
+            }
+
+            .transformation-title {
+                font-size: 1.6rem;
+            }
+
+            .transformation-item h4 {
+                font-size: 1.1rem;
+            }
+
+            .transformation-item p {
+                font-size: 0.9rem;
+            }
+
+            .urgency-box h3 {
+                font-size: 1.5rem;
+            }
+
+            .urgency-text {
+                font-size: 1rem;
+            }
+
+            .urgency-list li {
+                font-size: 0.9rem;
             }
         }
 
@@ -1935,4 +2019,228 @@
             border-radius: 50%;
             border-top-color: var(--neon-green);
             animation: rotate 1s ease-in-out infinite;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .hero {
+                padding-top: 80px;
+                min-height: 100vh;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+                margin-bottom: 1.2rem;
+            }
+            
+            .neural-hub {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .hero-visual {
+                height: 200px;
+                margin-top: 0.8rem;
+            }
+            
+            .features, .product, .testimonials, .cta-section {
+                padding: 1.5rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+            }
+            
+            .section-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .btn-cta {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .btn-outline-light {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .btn-desire-cta {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .feature-card p {
+                font-size: 0.9rem;
+            }
+
+            .testimonial-card h5 {
+                font-size: 1rem;
+            }
+
+            .testimonial-card p {
+                font-size: 0.85rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-section p {
+                font-size: 1rem;
+            }
+
+            .pricing-card {
+                padding: 1.5rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .plan-header h3 {
+                font-size: 1.3rem;
+            }
+
+            .price-large {
+                font-size: 1.8rem;
+            }
+
+            .plan-features li {
+                font-size: 0.85rem;
+                padding: 0.6rem 0;
+            }
+
+            .btn-outline-cta, .btn-business-cta {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .feature-icon {
+                font-size: 2.2rem;
+            }
+
+            .testimonial-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .works-title {
+                font-size: 1.5rem;
+            }
+
+            .domains-title {
+                font-size: 1.6rem;
+            }
+
+            .domains-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .step-content h4 {
+                font-size: 1rem;
+            }
+
+            .step-content p {
+                font-size: 0.8rem;
+            }
+
+            .step-number {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+                margin-right: 1rem;
+            }
+
+            .feature-text h4 {
+                font-size: 1rem;
+            }
+
+            .feature-text p {
+                font-size: 0.85rem;
+            }
+
+            .feature-icon-small {
+                width: 45px;
+                height: 45px;
+                margin-right: 1rem;
+            }
+
+            .feature-icon-small i {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 767px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .neural-hub {
+                width: 250px;
+                height: 250px;
+            }
+
+            .pricing-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .plan-header h3 {
+                font-size: 1.5rem;
+            }
+
+            .price-large {
+                font-size: 2rem;
+            }
+
+            .plan-features li {
+                font-size: 0.9rem;
+            }
+
+            .btn-outline-cta, .btn-business-cta {
+                padding: 0.9rem 1.8rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.4rem;
+            }
+            
+            .neural-hub {
+                width: 350px;
+                height: 350px;
+            }
+            
+            .hero-content {
+                text-align: left;
+            }
+            
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
         }
