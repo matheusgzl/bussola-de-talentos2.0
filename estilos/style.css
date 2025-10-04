@@ -381,7 +381,7 @@
 
         /* About Bússola Section */
         .about-bussola {
-            padding: 5rem 0;
+            padding: 3rem 0;
             background: linear-gradient(135deg, var(--secondary-dark), var(--primary-dark));
             position: relative;
             overflow: hidden;
@@ -394,24 +394,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 25% 25%, var(--glow-green) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
-            animation: float 10s ease-in-out infinite;
+            background: transparent;
         }
 
         .bussola-visual {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            height: 400px;
             position: relative;
+            margin-bottom: 2rem;
         }
 
         .compass-container {
             position: relative;
-            width: 400px;
-            height: 400px;
+            width: 350px;
+            height: 350px;
         }
 
         .compass-outer {
@@ -484,37 +482,58 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            animation: rotate 120s linear infinite;
         }
 
         .direction {
             position: absolute;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: var(--neon-green);
             text-shadow: 0 0 10px var(--neon-green);
             letter-spacing: 1px;
+            white-space: nowrap;
+            animation: rotate 120s linear infinite reverse;
         }
 
         .direction.north {
-            top: -15px;
-            left: 50%;
+            top: -40px;
+            left: 20%;
             transform: translateX(-50%);
         }
 
+        .direction.northeast {
+            top: -30px;
+            right: -60px;
+            transform: rotate(0deg);
+        }
+
         .direction.east {
-            right: -25px;
+            right: -80px;
             top: 50%;
             transform: translateY(-50%);
         }
 
+        .direction.southeast {
+            bottom: -30px;
+            right: -60px;
+            transform: rotate(0deg);
+        }
+
         .direction.south {
-            bottom: -15px;
+            bottom: -40px;
             left: 50%;
             transform: translateX(-50%);
         }
 
+        .direction.southwest {
+            bottom: -30px;
+            left: -60px;
+            transform: rotate(0deg);
+        }
+
         .direction.west {
-            left: -35px;
+            left: -80px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -1107,6 +1126,41 @@
                 height: 250px;
                 margin-bottom: 1rem;
             }
+
+            .direction {
+                font-size: 0.6rem;
+            }
+
+            .direction.north {
+                top: -25px;
+            }
+
+            .direction.south {
+                bottom: -25px;
+            }
+
+            .direction.east {
+                right: -50px;
+            }
+
+            .direction.northeast {
+                top: -20px;
+                right: -40px;
+            }
+
+            .direction.southeast {
+                bottom: -20px;
+                right: -40px;
+            }
+
+            .direction.southwest {
+                bottom: -20px;
+                left: -40px;
+            }
+
+            .direction.west {
+                left: -50px;
+            }
             
             .works-steps {
                 flex-direction: column;
@@ -1159,6 +1213,7 @@
                 padding: 0.15rem 0.5rem;
             }
         }
+
 
 
         /* Product Section */
