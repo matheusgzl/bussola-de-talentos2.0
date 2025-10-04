@@ -2146,8 +2146,8 @@
             border-radius: 20px;
             padding: 3rem;
             margin: 3rem 0;
-            border: 2px solid #fbbf24;
-            box-shadow: 0 0 30px var(--glow-green);
+            
+            box-shadow: 0 0 30px rgba(128, 128, 128, 0.548);
             position: relative;
         }
 
