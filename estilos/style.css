@@ -1380,14 +1380,13 @@
             color: var(--neon-green);
             font-size: 2.5rem;
             text-shadow: 0 0 20px var(--neon-green);
-            animation: pulse 2s infinite;
         }
 
         .process-arrow-mobile {
             color: var(--neon-green);
             font-size: 2.5rem;
             text-shadow: 0 0 20px var(--neon-green);
-            animation: pulse 2s infinite;
+            
             margin: 1rem 0;
         }
 
@@ -1423,11 +1422,7 @@
             font-weight: bold;
             color: var(--primary-dark);
             margin: 0 auto 1.5rem;
-            box-shadow: 
-                0 0 25px var(--glow-green),
-                0 8px 20px rgba(0, 0, 0, 0.3);
             position: relative;
-            animation: pulse 3s infinite;
         }
 
         .step-number-circle::before {
@@ -1440,8 +1435,6 @@
             background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             border-radius: 50%;
             z-index: -1;
-            opacity: 0.3;
-            animation: pulse 3s infinite;
         }
 
         .step-title {
@@ -1851,7 +1844,7 @@
         /* Responsive adjustments for desire section */
         @media (max-width: 767px) {
             .desire-title {
-                font-size: 1rem;
+                font-size: 0.5em;
                 line-height: 1.2;
             }
             
@@ -2173,7 +2166,7 @@
         }
 
         .desire-title {
-            font-size: 2.8rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: var(--text-white);
             margin-bottom: 3rem;
