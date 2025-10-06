@@ -590,34 +590,66 @@
                             </div>
                         </div>
 
-                        <div class="scarcity-box animate-on-scroll">
-                            <div class="scarcity-header">
-                                <i class="fas fa-clock"></i>
-                                <span>ATENÇÃO: OFERTA LIMITADA</span>
+                        <div class="offer-card animate-on-scroll">
+                        <div class="offer-header">
+                            <div class="offer-badge">
+                                <i class="fas fa-fire"></i>
+                                <span>OFERTA RELÂMPAGO</span>
                             </div>
-                            <p>Apenas <strong class="highlight-number">47 vagas</strong> restantes hoje com <strong>70% de desconto</strong></p>
-                            <div class="countdown-timer">
-                                <div class="timer-item">
-                                    <span class="timer-number" id="hours">23</span>
-                                    <span class="timer-label">Horas</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-number" id="minutes">59</span>
-                                    <span class="timer-label">Min</span>
-                                </div>
-                                <div class="timer-item">
-                                    <span class="timer-number" id="seconds">45</span>
-                                    <span class="timer-label">Seg</span>
-                                </div>
-                            </div>
-                            <p class="scarcity-warning">⚠️ Depois de hoje, o preço volta para R$ 99,90</p>
+                            <h2 class="offer-title">🚨 ÚLTIMAS HORAS! 🚨</h2>
+                            <h3 class="offer-subtitle">Descubra Seus Talentos com <span class="highlight-price">70% OFF</span></h3>
                         </div>
-
-                        <button class="btn btn-cta btn-lg mega-cta" onclick="scrollToSection('product')">
-                            <i class="fas fa-bolt me-2"></i>
-                            SIM! QUERO DESCOBRIR MEUS TALENTOS AGORA
-                            <div class="cta-subtitle">Antes que seja tarde demais</div>
-                        </button>
+                        
+                        <div class="timer-container">
+                            <div class="timer-title">Esta oferta expira em:</div>
+                            <div class="countdown-timer" id="countdownTimer">
+                                <div class="timer-unit">
+                                    <div class="timer-number" id="hours">23</div>
+                                    <div class="timer-label">HORAS</div>
+                                </div>
+                                <div class="timer-separator">:</div>
+                                <div class="timer-unit">
+                                    <div class="timer-number" id="minutes">59</div>
+                                    <div class="timer-label">MINUTOS</div>
+                                </div>
+                                <div class="timer-separator">:</div>
+                                <div class="timer-unit">
+                                    <div class="timer-number" id="seconds">59</div>
+                                    <div class="timer-label">SEGUNDOS</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="offer-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="price-comparison">
+                                        <div class="old-price">
+                                            <span class="price-label">Preço Normal:</span>
+                                            <span class="price-value">R$ 697</span>
+                                        </div>
+                                        <div class="new-price">
+                                            <span class="price-label">Hoje Apenas:</span>
+                                            <span class="price-value">R$ 197</span>
+                                            <span class="savings">Economia de R$ 500!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="offer-cta">
+                            <button class="btn btn-offer-cta" onclick="selectPlan('oferta-limitada')">
+                                <i class="fas fa-bolt me-2"></i>GARANTIR MINHA VAGA AGORA!
+                            </button>
+                            <div class="offer-guarantee">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Garantia incondicional de 60 dias ou seu dinheiro de volta</span>
+                            </div>
+                            <div class="urgency-text">
+                                ⚠️ Apenas 47 vagas restantes neste preço!
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
