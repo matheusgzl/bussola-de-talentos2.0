@@ -1366,23 +1366,24 @@
         .highlight-price {
             color: var(--light-green);
             font-size: 2.2rem;
-            text-shadow: 0 0 15px rgba(255, 107, 53, 0.5);
+            text-shadow: 0 0 15px rgba(0, 255, 149, 0.5);
             animation: pulse 1.5s infinite;
         }
 
         .timer-container {
             margin: 2rem 0;
             padding: 2rem;
-            background: linear-gradient(145deg, var(--primary-dark) , var(--secondary-dark));
-            border: 2px solid var(--accent-dark);
+            background: linear-gradient(145deg, transparent);
             border-radius: 20px;
             box-shadow: 
-                0 0 25px rgba(255, 107, 53, 0.2),
+                0 0 25px rgba(255, 255, 255, 0.63),
                 inset 0 0 15px rgba(255, 107, 53, 0.1);
+            animation: pulse 2s infinite;
         }
 
         .timer-title {
-            color: var(--text-white);
+            color: yellow;
+            text-shadow: 0 0 10px rgb(255, 230, 0);
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 1.5rem;
@@ -1402,20 +1403,25 @@
             border-radius: 15px;
             padding: 1.5rem 1rem;
             min-width: 100px;
-            box-shadow: 
-                0 0 20px rgba(0, 255, 115, 0.4),
-                0 8px 25px rgba(2, 240, 109, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgb(255, 238, 0);
             flex: 1;
             max-width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .timer-number {
             font-size: 2.5rem;
             font-weight: bold;
-            color: var(--text-white);
+            color: rgba(255, 255, 0, 0.637);
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             margin-bottom: 0.5rem;
+            line-height: 1;
+            display: block;
+            width: 100%;
+            text-align: center;
         }
 
         .timer-label {
@@ -1424,14 +1430,17 @@
             color: var(--text-white);
             text-transform: uppercase;
             letter-spacing: 1px;
+            line-height: 1;
+            display: block;
+            width: 100%;
+            text-align: center;
         }
 
         .timer-separator {
             font-size: 2rem;
             font-weight: bold;
-            color: var(--light-green);
-            text-shadow: 0 0 10px rgba(0, 255, 85, 0.5);
-            animation: pulse 1s infinite;
+            color: yellow;
+            text-shadow: 0 0 10px rgba(194, 255, 53, 0.5);
         }
 
         .offer-content {
@@ -1440,9 +1449,10 @@
         }
 
         .price-comparison {
-            background: linear-gradient(145deg, rgba(0, 0, 0, 0.3), rgba(30, 58, 95, 0.2));
+            background: linear-gradient(145deg, transparent);
             border: 2px solid var(--secondary-dark);
             border-radius: 15px;
+            text-align: center;
             padding: 2rem;
             margin-bottom: 1rem;
         }
@@ -1474,10 +1484,10 @@
         }
 
         .new-price .price-value {
-            color: #ff6b35;
+            color: var(--text-white);
             font-size: 3rem;
             font-weight: bold;
-            text-shadow: 0 0 15px rgba(255, 107, 53, 0.5);
+            text-shadow: 0 0 15px rgb(53, 255, 120);
             display: block;
             margin-bottom: 0.5rem;
         }
@@ -1493,6 +1503,56 @@
             box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
         }
 
+        .offer-benefits {
+            background: linear-gradient(145deg, rgba(0, 255, 136, 0.1), rgba(77, 255, 159, 0.05));
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .offer-benefits h4 {
+            color: var(--neon-green);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .bonus-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .bonus-list li {
+            color: var(--text-white);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+            background: rgba(0, 255, 136, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid var(--neon-green);
+        }
+
+        .bonus-list li i {
+            color: var(--neon-green);
+            margin-right: 1rem;
+            font-size: 1.1rem;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+        }
+
+        .total-value {
+            color: var(--neon-green);
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        }
 
         .offer-cta {
             margin-top: 2rem;
@@ -1500,7 +1560,7 @@
         }
 
         .btn-offer-cta {
-            background: linear-gradient(45deg, var(--neon-green), var(--light-green));
+            background: linear-gradient(45deg, var(--light-green), var(--neon-green));
             border: none;
             padding: 1.5rem 3rem;
             font-size: 1.4rem;
@@ -1508,7 +1568,7 @@
             color: var(--text-white);
             border-radius: 50px;
             box-shadow: 
-                0 0 30px rgba(53, 255, 63, 0.6),
+                0 0 30px rgba(255, 107, 53, 0.6),
                 0 15px 40px rgba(0, 0, 0, 0.4);
             transition: all 0.3s ease;
             animation: pulse 2s infinite;
@@ -1516,6 +1576,7 @@
             overflow: hidden;
             text-transform: uppercase;
             letter-spacing: 1px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
             margin-bottom: 1.5rem;
         }
 
@@ -1537,7 +1598,7 @@
         .btn-offer-cta:hover {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 
-                0 0 40px rgba(53, 255, 80, 0.8),
+                0 0 40px rgba(255, 107, 53, 0.8),
                 0 20px 50px rgba(0, 0, 0, 0.5);
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
@@ -1593,28 +1654,35 @@
             }
             
             .countdown-timer {
-                gap: 0.5rem;
+                gap: 0.3rem;
+                flex-wrap: nowrap;
             }
             
             .timer-unit {
-                min-width: 80px;
-                padding: 1rem 0.8rem;
+                min-width: 56px;
+                max-width: 90px;
+                padding: 1rem 0.3rem;
+                flex: 1;
+                min-height: 80px;
             }
             
             .timer-number {
-                font-size: 2rem;
+                font-size: 1.8rem;
+                line-height: 0.9;
+                margin-bottom: 0.3rem;
             }
             
             .timer-label {
-                font-size: 0.8rem;
+                font-size: 6px;
+                line-height: 1;
             }
             
             .timer-separator {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                flex-shrink: 0;
             }
             
-            .price-comparison,
-            .offer-benefits {
+            .price-comparison {
                 padding: 1.5rem;
                 margin-bottom: 1.5rem;
             }
@@ -1635,12 +1703,32 @@
         }
 
         @media (min-width: 768px) and (max-width: 991px) {
+            .countdown-timer {
+                gap: 0.8rem;
+                flex-wrap: nowrap;
+            }
+            
             .timer-unit {
                 min-width: 90px;
+                max-width: 110px;
+                flex: 1;
+                padding: 1.2rem 0.8rem;
+                min-height: 100px;
             }
             
             .timer-number {
                 font-size: 2.2rem;
+                line-height: 1;
+                margin-bottom: 0.4rem;
+            }
+            
+            .timer-label {
+                font-size: 0.4rem;
+                line-height: 1;
+            }
+            
+            .timer-separator {
+                flex-shrink: 0;
             }
         }
         
@@ -2817,12 +2905,12 @@
             display: block;
             font-size: 2rem;
             font-weight: bold;
-            color: var(--light-green);
-            text-shadow: 0 0 10px var(--neon-green);
+            color: rgba(255, 255, 0, 0.795);
+            text-shadow: 0 0 10px yellow;
         }
 
         .timer-label {
-            font-size: 0.8rem;
+            font-size: 12px;
             color: var(--text-gray);
         }
 
