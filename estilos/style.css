@@ -102,6 +102,24 @@
             to { transform: rotate(360deg); }
         }
 
+        @keyframes needleFloat {
+            0%, 100% { 
+                transform: rotate(0deg) scale(1);
+                filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.8));
+            }
+            25% { 
+                transform: rotate(1deg) scale(1.02);
+                filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.9));
+            }
+            50% { 
+                transform: rotate(0deg) scale(1.05);
+                filter: drop-shadow(0 0 25px rgba(0, 255, 136, 1));
+            }
+            75% { 
+                transform: rotate(-1deg) scale(1.02);
+                filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.9));
+            }
+        }
        
 
         /* Background Effects */
@@ -585,7 +603,7 @@
             height: 160px;
             margin: -80px 0 0 -2px;
             z-index: 10;
-            animation: needleRotate 8s linear infinite;
+            animation: needleFloat 3s ease-in-out infinite;
         }
 
         .needle-north {
@@ -1599,7 +1617,7 @@
         .savings {
             background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             color: var(--primary-dark);
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.5rem;
             border-radius: 25px;
             font-size: 1rem;
             font-weight: bold;
@@ -1663,50 +1681,6 @@
             text-align: center;
         }
 
-        .btn-offer-cta {
-            background: linear-gradient(45deg, var(--light-green), var(--neon-green));
-            border: none;
-            padding: 1.5rem 3rem;
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--text-white);
-            border-radius: 50px;
-            box-shadow: 
-                0 0 30px rgba(255, 107, 53, 0.6),
-                0 15px 40px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-            position: relative;
-            overflow: hidden;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 3px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 1.5rem;
-        }
-
-        .btn-offer-cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s;
-        }
-
-        .btn-offer-cta:hover::before {
-            left: 100%;
-        }
-
-        .btn-offer-cta:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 
-                0 0 40px rgba(255, 107, 53, 0.8),
-                0 20px 50px rgba(0, 0, 0, 0.5);
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-        }
-
         .offer-guarantee {
             color: var(--text-white);
             font-size: 1rem;
@@ -1726,7 +1700,7 @@
             color: #ff6b35;
             font-size: 1.1rem;
             font-weight: bold;
-            animation: pulse 1.5s infinite;
+            animation: pulse 1.5s infinite ;
             text-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
         }
 
@@ -1741,7 +1715,7 @@
             }
             
             .offer-title {
-                font-size: 1.8rem;
+                font-size: 19px;
                 line-height: 1.2;
             }
             
@@ -1750,7 +1724,7 @@
             }
             
             .highlight-price {
-                font-size: 1.8rem;
+                font-size: 20px;
             }
             
             .timer-title {
@@ -1796,7 +1770,7 @@
             }
             
             .btn-offer-cta {
-                padding: 1.2rem 2rem;
+                padding: 5px 10px;
                 font-size: 1.1rem;
                 width: 100%;
             }
@@ -1851,10 +1825,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 20%, var(--glow-green) 0%, transparent 60%),
-                radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.15) 0%, transparent 60%),
-                radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 70%);
             animation: float 12s ease-in-out infinite;
         }
 
@@ -2098,8 +2068,8 @@
         .btn-strategic-cta {
             background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             border: none;
-            padding: 1.2rem 2.5rem;
-            font-size: 1.2rem;
+            padding: 10px 30px;
+            font-size: 14px;
             font-weight: bold;
             color: var(--primary-dark);
             border-radius: 50px;
@@ -2362,7 +2332,7 @@
 
         #urgencyBadge {
             background-image: linear-gradient(to right, #FE6F33, #F7911F);
-            margin-left: 50px;
+            margin-left: 7px;
         }
 
         /* Footer */
@@ -3101,7 +3071,7 @@
             }
 
             .floating-label.executing {
-                top: 140px;
+                top: 123px;
             }
 
             .floating-label.influencing {
@@ -3110,12 +3080,12 @@
             }
 
             .floating-label.relationship {
-                bottom: 3152px;
-                right: 44px;
+                bottom: 3339px;
+                right: 48px;
             }
 
             .floating-label.thinking {
-                bottom: 3108px;
+                bottom: 3075px;
             }
 
             .floating-label.creativity {
@@ -3124,7 +3094,7 @@
             }
 
             .floating-label.leadership {
-                bottom: 3151px;
+                bottom: 3339px;
                 left: 78px;
             }
             
@@ -3331,7 +3301,8 @@
             }
         }
 
-        @media (max-width: 480px) {
+
+        /*@media (max-width: 480px) {
             .advanced-compass {
                 width: 180px;
                 height: 180px;
@@ -3349,4 +3320,313 @@
             .cardinal-mark.southeast { bottom: 35px; right: 35px; }
             .cardinal-mark.southwest { bottom: 35px; left: 35px; }
             .cardinal-mark.northwest { top: 35px; left: 35px; }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .floating-label {
+                font-size: 0.6rem;
+            }
+
+            .floating-label.executing {
+                top: 180px;
+                left: 50%;
+            }
+
+            .floating-label.influencing {
+                top: 220px;
+                right: 81px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3258px;
+                right: 49px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3300px;
+                left: 50%;
+            }
+
+            .floating-label.creativity {
+                top: 220px;
+                left: 65px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3259px;
+                left: 76px;
+            }
+        }*/
+
+        /* Breakpoints específicos para telas pequenas - ordem decrescente */
+        @media (min-width: 481px) and (max-width: 576px) {
+            .advanced-compass {
+                width: 220px;
+                height: 220px;
+            }
+
+            .floating-label {
+                font-size: 0.75rem;
+            }
+
+            .floating-label.executing {
+                top: 120px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3078px;
+            }
+
+            .floating-label.influencing {
+                top: 164px;
+                right: 130px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3120px;
+                right: 90px;
+            }
+
+            .floating-label.creativity {
+                top: 164px;
+                left: 115px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3120px;
+                left: 130px;
+            }
+        }
+
+        @media (min-width: 431px) and (max-width: 480px) {
+            .advanced-compass {
+                width: 200px;
+                height: 200px;
+            }
+
+            .floating-label {
+                font-size: 0.65rem;
+            }
+
+            .floating-label.executing {
+                top: -18px;
+            }
+
+            .floating-label.thinking {
+                bottom: -18px;
+            }
+        }
+
+        @media (min-width: 415px) and (max-width: 430px) {
+            .advanced-compass {
+                width: 190px;
+                height: 190px;
+            }
+
+            .floating-label {
+                font-size: 0.6rem;
+            }
+
+            .floating-label.executing {
+                top: 150px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3143px;
+            }
+
+            .floating-label.influencing {
+                top: 187px;
+                right: 95px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3178px;
+                right: 63px;
+            }
+
+            .floating-label.creativity {
+                top: 187px;
+                left: 84px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3178px;
+                left: 93px;
+            }
+        }
+
+        @media (min-width: 391px) and (max-width: 414px) {
+            .advanced-compass {
+                width: 180px;
+                height: 180px;
+            }
+
+            .floating-label {
+                font-size: 0.58rem;
+            }
+
+            .floating-label.executing {
+                top: 150px;
+            }
+
+            .floating-label.influencing {
+                top: 182px;
+                right: 90px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3221px;
+                right: 58px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3179px;
+            }
+
+            .floating-label.creativity {
+                top: 182px;
+                left: 80px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3221px;
+                left: 88px;
+            }
+        }
+
+        @media (min-width: 361px) and (max-width: 390px) {
+            .advanced-compass {
+                width: 170px;
+                height: 170px;
+            }
+
+            .floating-label {
+                font-size: 0.55rem;
+            }
+
+            .floating-label.executing {
+                top: 148px;
+            }
+
+            .floating-label.influencing {
+                top: 182px;
+                right: 88px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3254px;
+                right: 57px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3221px;
+            }
+
+            .floating-label.creativity {
+                top: 182px;
+                left: 78px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3254px;
+                left: 86px;
+            }
+        }
+
+        @media (min-width: 345px) and (max-width: 360px) {
+            .advanced-compass {
+                width: 160px;
+                height: 160px;
+            }
+
+            .floating-label {
+                font-size: 0.5rem;
+            }
+
+            .floating-label.executing {
+                top: 150px;
+            }
+
+            .floating-label.influencing {
+                top: 182px;
+                right: 80px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3451px;
+                right: 54px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3416px;
+            }
+
+            .floating-label.creativity {
+                top: 182px;
+                left: 70px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3451px;
+                left: 77px;
+            }
+        }
+
+        @media (max-width: 344px) {
+            .advanced-compass {
+                width: 150px;
+                height: 150px;
+            }
+
+            .floating-label {
+                font-size: 0.45rem;
+            }
+
+            .floating-label.executing {
+                top: 180px;
+            }
+
+            .floating-label.influencing {
+                top: 210px;
+                right: 75px;
+            }
+
+            .floating-label.relationship {
+                bottom: 3473px;
+                right: 55px;
+            }
+
+            .floating-label.thinking {
+                bottom: 3440px;
+            }
+
+            .floating-label.creativity {
+                top: 210px;
+                left: 70px;
+            }
+
+            .floating-label.leadership {
+                bottom: 3473px;
+                left: 75px;
+            }
+
+            .cardinal-mark {
+                font-size: 0.7rem;
+            }
+
+            .cardinal-mark.north { top: 15px; }
+            .cardinal-mark.south { bottom: 15px; }
+            .cardinal-mark.east { right: 15px; }
+            .cardinal-mark.west { left: 15px; }
+            .cardinal-mark.northeast { top: 30px; right: 30px; }
+            .cardinal-mark.southeast { bottom: 30px; right: 30px; }
+            .cardinal-mark.southwest { bottom: 30px; left: 30px; }
+            .cardinal-mark.northwest { top: 30px; left: 30px; }
         }
