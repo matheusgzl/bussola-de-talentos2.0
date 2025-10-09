@@ -97,41 +97,6 @@
             to { transform: rotate(-360deg); }
         }
 
-        @keyframes needleFloat {
-            0%, 100% { 
-                transform: rotate(15deg) scale(1.25);
-                filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.9));
-            }
-            12.5% { 
-                transform: rotate(4deg) scale(1.03);
-                filter: drop-shadow(0 0 25px rgba(0, 255, 136, 1));
-            }
-            25% { 
-                transform: rotate(5deg) scale(1.08);
-                filter: drop-shadow(0 0 30px rgba(0, 255, 136, 1.2));
-            }
-            37.5% { 
-                transform: rotate(2deg) scale(1.05);
-                filter: drop-shadow(0 0 28px rgba(0, 255, 136, 1.1));
-            }
-            50% { 
-                transform: rotate(0deg) scale(1.1);
-                filter: drop-shadow(0 0 35px rgba(0, 255, 136, 1.3));
-            }
-            62.5% { 
-                transform: rotate(-2deg) scale(1.05);
-                filter: drop-shadow(0 0 28px rgba(0, 255, 136, 1.1));
-            }
-            75% { 
-                transform: rotate(-5deg) scale(1.08);
-                filter: drop-shadow(0 0 30px rgba(0, 255, 136, 1.2));
-            }
-            87.5% { 
-                transform: rotate(-3deg) scale(1.03);
-                filter: drop-shadow(0 0 25px rgba(0, 255, 136, 1));
-            }
-        }
-
         @keyframes needleRotateNOtoNE {
             0% { 
                 transform: rotate(45deg);
