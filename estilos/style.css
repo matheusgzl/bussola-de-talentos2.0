@@ -3783,15 +3783,6 @@
 
         @media (max-width: 344px) {
 
-            .navbar-toggler {
-                margin-left: auto;
-                order: 2;
-            }
-            
-            .navbar-brand {
-                order: 1;
-            }
-
             .advanced-compass {
                 width: 150px;
                 height: 150px;
