@@ -1705,6 +1705,189 @@
             animation: pulse 2s infinite ;
         }
 
+        /* Responsive adjustments for offer box */
+        @media (max-width: 768px) {
+            .limited-offer-box {
+                padding: 1.5rem;
+            }
+
+            .countdown-timer {
+                gap: 0.5rem !important;
+            }
+
+            .time-unit {
+                min-width: 50px;
+                padding: 0.4rem 0.2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .time-number {
+                font-size: 1.3rem;
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .time-label {
+                font-size: 0.6rem;
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .time-separator {
+                font-size: 1.3rem;
+                margin: 0 0.1rem;
+            }
+
+            .new-price {
+                font-size: 1.8rem;
+            }
+
+            .offer-timer-label {
+                font-size: 0.9rem;
+            }
+
+            .benefit-item {
+                font-size: 0.9rem;
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .limited-offer-box {
+                padding: 1rem;
+            }
+
+            .countdown-timer {
+                gap: 0.3rem !important;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .time-unit {
+                min-width: 45px;
+                padding: 0.3rem 0.15rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .time-number {
+                font-size: 1.1rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                line-height: 1;
+            }
+
+            .time-label {
+                font-size: 0.55rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin-top: 0.1rem;
+            }
+
+            .time-separator {
+                font-size: 1.1rem;
+                margin: 0 0.1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .new-price {
+                font-size: 1.6rem;
+            }
+
+            .old-price {
+                font-size: 1.1rem;
+            }
+
+            .offer-timer-label {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+
+            .discount-badge {
+                font-size: 0.8rem;
+                padding: 0.25rem 0.6rem;
+            }
+
+            .benefit-item {
+                font-size: 0.85rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .benefit-item i {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .countdown-timer {
+                gap: 0.2rem !important;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .time-unit {
+                min-width: 40px;
+                padding: 0.25rem 0.1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .time-number {
+                font-size: 1rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                line-height: 1;
+            }
+
+            .time-label {
+                font-size: 0.5rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin-top: 0.1rem;
+            }
+
+            .time-separator {
+                font-size: 1rem;
+                margin: 0 0.05rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .new-price {
+                font-size: 1.4rem;
+            }
+
+            .benefit-item {
+                font-size: 0.8rem;
+            }
+        }
+
         /* Responsive adjustments for limited offer */
         @media (max-width: 767px) {
             .limited-offer-section {
@@ -1725,7 +1908,7 @@
             }
             
             .highlight-price {
-                font-size: 20px;
+                font-size: 19px;
             }
             
             .timer-title {
