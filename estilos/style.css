@@ -1717,7 +1717,7 @@
 
             .time-unit {
                 min-width: 50px;
-                padding: 0.5rem 0.3rem;
+                padding: 10px 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -1770,7 +1770,7 @@
 
             .time-unit {
                 min-width: 45px;
-                padding: 0.4rem 0.20rem;
+                padding: 10px 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -1843,7 +1843,7 @@
 
             .time-unit {
                 min-width: 40px;
-                padding: 0.30rem 0.2rem;
+                padding: 10px 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
