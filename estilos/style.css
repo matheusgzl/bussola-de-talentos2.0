@@ -3799,6 +3799,39 @@
 
         @media (max-width: 344px) {
 
+            .navbar {
+                padding: 0.5rem 1rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+                margin-right: 0;
+                flex-grow: 1;
+            }
+            
+            .navbar-toggler {
+                margin-left: 0;
+                padding: 0.25rem 0.5rem;
+                border: none !important;
+                box-shadow: none !important;
+                background: transparent !important;
+                position: relative;
+                z-index: 1001;
+            }
+            
+            .container {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+            
+            .navbar > .container {
+                flex-wrap: nowrap;
+            }
+
             .advanced-compass {
                 width: 150px;
                 height: 150px;
