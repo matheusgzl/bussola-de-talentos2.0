@@ -244,6 +244,22 @@
             height: 1.5em;
         }
 
+        /* Mobile positioning for hamburger menu */
+        @media (max-width: 991px) {
+            .navbar-toggler {
+                margin-left: auto;
+                order: 2;
+            }
+            
+            .navbar-brand {
+                order: 1;
+            }
+            
+            .navbar-nav {
+                order: 3;
+            }
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
