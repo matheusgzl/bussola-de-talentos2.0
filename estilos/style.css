@@ -32,9 +32,9 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 var(--glow-green); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+            0% { transform: scale(1);}
+            70% { transform: scale(1.05);}
+            100% { transform: scale(1);}
         }
 
         @keyframes slideInLeft {
@@ -1450,14 +1450,18 @@
         }
 
         .offer-card {
-            background: linear-gradient(145deg, rgba(10, 22, 40, 0.95), rgba(30, 58, 95, 0.9));
-            border: 3px solid var(--accent-dark);
-            border-radius: 25px;
+            background: linear-gradient(145deg, rgba(0, 255, 136, 0.15), rgba(0, 255, 136, 0.05));
+            border: 2px solid #00ff88;
+            border-radius: 20px;
             padding: 3rem 2rem;
             text-align: center;
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(15px);
+            box-shadow: 
+                0 0 30px rgba(0, 255, 136, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                
         }
 
         .offer-card::before {
@@ -1467,9 +1471,8 @@
             left: -3px;
             right: -3px;
             bottom: -3px;
-            background: linear-gradient(45deg, 
-                var(--primary-dark), var(--secondary-dark)
-            );
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            animation: shimmer 3s infinite;
             background-size: 400% 400%;
             border-radius: 28px;
             z-index: -1;
@@ -1525,78 +1528,44 @@
             animation: pulse 1.5s infinite;
         }
 
-        .timer-container {
-            margin: 2rem 0;
-            padding: 2rem;
-            background: linear-gradient(145deg, transparent);
-            border-radius: 20px;
-            box-shadow: 
-                0 0 25px rgba(255, 255, 255, 0.63),
-                inset 0 0 15px rgba(255, 107, 53, 0.1);
-            animation: pulse 2s infinite;
-        }
-
-        .timer-title {
-            color: yellow;
-            text-shadow: 0 0 10px rgb(255, 230, 0);
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-
         .countdown-timer {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: nowrap;
-        }
-
-        .timer-unit {
-            background: black;
-            border-radius: 15px;
-            padding: 1.5rem 1rem;
-            min-width: 100px;
-            border: 2px solid rgb(255, 238, 0);
-            flex: 1;
-            max-width: 120px;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        .timer-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: rgba(255, 255, 0, 0.637);
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 0.5rem;
-            line-height: 1;
-            display: block;
-            width: 100%;
+        .time-unit {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 1.5rem 2rem;
+            min-width: 60px;
             text-align: center;
         }
 
-        .timer-label {
-            font-size: 0.9rem;
+        .time-number {
+            font-size: 1.5rem;
             font-weight: bold;
-            color: var(--text-white);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #00ff88;
             line-height: 1;
-            display: block;
-            width: 100%;
-            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
         }
 
-        .timer-separator {
-            font-size: 2rem;
-            font-weight: bold;
-            color: yellow;
-            text-shadow: 0 0 10px rgba(194, 255, 53, 0.5);
+        .time-label {
+            font-size: 0.7rem;
+            color: #e2e8f0;
+            font-weight: 500;
+            margin-top: 0.2rem;
         }
+
+        .time-separator {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00ff88;
+            margin: 0 0.2rem;
+            animation: blink 1s infinite;
+        }
+
 
         .offer-content {
             margin: 2rem 0;
@@ -1605,7 +1574,6 @@
 
         .price-comparison {
             background: linear-gradient(145deg, transparent);
-            border: 2px solid var(--secondary-dark);
             border-radius: 15px;
             text-align: center;
             padding: 2rem;
@@ -1734,8 +1702,7 @@
             color: #ff6b35;
             font-size: 1.1rem;
             font-weight: bold;
-            animation: pulse 1.5s infinite ;
-            text-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+            animation: pulse 2s infinite ;
         }
 
         /* Responsive adjustments for limited offer */
@@ -1906,7 +1873,7 @@
             color: var(--text-white);
             text-align: center;
             margin-bottom: 3rem;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.6;
         }
 
@@ -2362,6 +2329,22 @@
             display: inline-block;
             margin-top: 1rem;
             font-weight: bold;
+        }
+
+        #texto-vermelho {
+            background: rgba(255, 71, 87, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #ff4757;
+            color: var(--text-white);
+        }
+
+        #texto-verde{
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 4px solid var(--neon-green);
+            padding: 1rem;
+            border-radius: 10px;
+            color: var(--text-white);
         }
 
         #urgencyBadge {
