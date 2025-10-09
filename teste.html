@@ -1218,6 +1218,40 @@
             }
         }
 
+        .mobile-screenshots-section {
+  padding: 2rem 0;
+}
+
+.mobile-screenshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.mobile-frame {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 0 2px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.screenshot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+
         /* Desire Generation Section */
         .desire-section {
             padding: 3rem 0;
@@ -3443,6 +3477,27 @@
             </div>
         </div>
     </section>
+
+    <section class="mobile-screenshots-section mb-5">
+  <div class="container">
+    <div class="row g-3 g-md-4 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="mobile-screenshot-container">
+          <div class="mobile-frame">
+            <img src="imagens/print1.jpg" alt="Screenshot 1" class="screenshot-image img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="mobile-screenshot-container">
+          <div class="mobile-frame">
+            <img src="imagens/print2.jpg" alt="Screenshot 2" class="screenshot-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Features Section -->
     <section id="features" class="features">
