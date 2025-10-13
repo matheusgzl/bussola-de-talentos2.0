@@ -227,6 +227,7 @@
             }
             
             .navbar-brand {
+                font-size: 1.3rem;
                 order: 1;
             }
             
