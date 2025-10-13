@@ -501,10 +501,10 @@
         .cardinal-mark.south { bottom: 35px; left: 50%; transform: translateX(-50%); }
         .cardinal-mark.east { right: 43px; top: 50%; transform: translateY(-50%); }
         .cardinal-mark.west { left: 43px; top: 50%; transform: translateY(-50%); }
-        .cardinal-mark.northeast { top: 55px; right: 55px; }
-        .cardinal-mark.southeast { bottom: 55px; right: 55px; }
-        .cardinal-mark.southwest { bottom: 55px; left: 55px; }
-        .cardinal-mark.northwest { top: 55px; left: 55px; }
+        .cardinal-mark.northeast { top: 70px; right: 75px; }
+        .cardinal-mark.southeast { bottom: 70px; right: 75px; }
+        .cardinal-mark.southwest { bottom: 70px; left: 75px; }
+        .cardinal-mark.northwest { top: 70px; left: 75px; }
 
         /* Middle Ring */
         .compass-middle-ring {
@@ -1354,45 +1354,45 @@
                 font-size: 1rem;
             }
 
-            .cardinal-mark.north { top: 30px; }
-            .cardinal-mark.south { bottom: 30px; }
-            .cardinal-mark.east { right: 30px; }
-            .cardinal-mark.west { left: 30px; }
-            .cardinal-mark.northeast { top: 45px; right: 45px; }
-            .cardinal-mark.southeast { bottom: 45px; right: 45px; }
-            .cardinal-mark.southwest { bottom: 45px; left: 45px; }
-            .cardinal-mark.northwest { top: 45px; left: 45px; }
+            .cardinal-mark.north { top: 40px; }
+            .cardinal-mark.south { bottom: 40px; }
+            .cardinal-mark.east { right: 45px; }
+            .cardinal-mark.west { left: 45px; }
+            .cardinal-mark.northeast { top: 75px; right: 75px; }
+            .cardinal-mark.southeast { bottom: 75px; right: 75px; }
+            .cardinal-mark.southwest { bottom: 75px; left: 75px; }
+            .cardinal-mark.northwest { top: 75px; left: 75px; }
 
             .floating-label {
                 font-size: 0.8rem;
             }
 
             .floating-label.executing {
-                top: -20px;
+                top: 230px;
             }
 
             .floating-label.influencing {
-                top: 4px;
-                right: 4px;
+                top: 275px;
+                right: 140px;
             }
 
             .floating-label.relationship {
-                bottom: 4px;
-                right: 4px;
+                bottom: 3210px;
+                right: 110px;
             }
 
             .floating-label.thinking {
-                bottom: -20px;
+                bottom: 3170px;
             }
 
             .floating-label.creativity {
-                top: -1px;
-                left: -1px;
+                top: 275px;
+                left: 140px;
             }
 
             .floating-label.leadership {
-                bottom: 4px;
-                left: 4px;
+                bottom: 3210px;
+                left: 145px;
             }
             
             .works-steps {
@@ -2869,8 +2869,8 @@
                 font-size: 4rem;
             }
             .advanced-compass {
-                width: 260px;
-                height: 260px;
+                width: 360px;
+                height: 360px;
             }
         }
 
@@ -4192,7 +4192,7 @@
             }
             
             .navbar-brand {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 margin-right: 0;
                 flex-grow: 1;
             }
@@ -4210,7 +4210,7 @@
             .container {
                 padding-left: 0.75rem;
                 padding-right: 0.75rem;
-                display: flex;
+                display: grid;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
