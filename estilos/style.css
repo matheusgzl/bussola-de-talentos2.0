@@ -371,6 +371,7 @@
         .section-subtitle {
             color: var(--text-gray);
             font-size: 1.1rem;
+            margin-bottom: 3px;
         }
 
         .feature-card {
@@ -445,7 +446,7 @@
 
         /* About Bússola Section */
         .about-bussola {
-            padding: 3rem 0;
+            padding: 2rem 0;
             background: linear-gradient(135deg, var(--secondary-dark), var(--primary-dark));
             position: relative;
             overflow: hidden;
@@ -463,7 +464,7 @@
 
         /* Advanced Compass Section */
         .compass-section {
-            padding: 90px 0;
+            padding: 80px 0;
             background: linear-gradient(145deg, rgba(30, 58, 95, 0.3), rgba(10, 22, 40, 0.5));
             position: relative;
             overflow: hidden;
@@ -1547,7 +1548,7 @@
         }
 
         .time-number {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             color: #00ff88;
             line-height: 1;
@@ -1621,7 +1622,7 @@
         .savings {
             background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             color: var(--primary-dark);
-            padding: 0.5rem 0.5rem;
+            padding: 0.5rem 1.5rem;
             border-radius: 25px;
             font-size: 1rem;
             font-weight: bold;
@@ -2256,7 +2257,7 @@
             background: linear-gradient(45deg, var(--neon-green), var(--light-green));
             border: none;
             padding: 20px 35px;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
             color: var(--primary-dark);
             border-radius: 50px;
@@ -2288,6 +2289,49 @@
         }
 
         .btn-strategic-cta:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 0 35px var(--glow-green),
+                0 15px 40px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 0 10px var(--primary-dark);
+        }
+
+        .btn-plans-cta{
+            background: linear-gradient(45deg, var(--neon-green), var(--light-green));
+            border: none;
+            padding: 20px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-dark);
+            border-radius: 50px;
+            box-shadow: 
+                0 0 25px var(--glow-green),
+                0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-plans-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-plans-cta:hover::before {
+            left: 100%;
+        }
+
+        .btn-plans-cta:hover {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 
                 0 0 35px var(--glow-green),
@@ -2344,6 +2388,10 @@
             
             .process-arrow-mobile {
                 font-size: 2rem;
+            }
+
+            .btn-plans-cta {
+                font-size: 15px;
             }
         }
 
@@ -2619,6 +2667,10 @@
                 width: 10px;
                 height: 10px;
                 margin: 0 0.3rem;
+            }
+
+            .btn-plans-cta {
+                font-size: 14px;
             }
         }
 
@@ -3185,12 +3237,12 @@
 
         .pain-point .desire-icon {
             color: #ff4757;
-            text-shadow: 0 0 15px #ff4757;
+            text-shadow: 0 0 5px #ff4757;
         }
 
         .solution-point .desire-icon {
             color: var(--neon-green);
-            text-shadow: 0 0 10px var(--neon-green);
+            text-shadow: 0 0 5px var(--neon-green);
         }
 
         .desire-card h4 {
@@ -3758,6 +3810,10 @@
                 font-size: 1rem;
             }
 
+            .btn-plans-cta {
+                font-size: 1rem;
+            }
+
             .btn-outline-light {
                 padding: 0.8rem 1.5rem;
                 font-size: 1rem;
@@ -3891,6 +3947,10 @@
                 padding: 0.9rem 1.8rem;
                 font-size: 1rem;
             }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
+            }
         }
 
         @media (min-width: 768px) {
@@ -3913,6 +3973,10 @@
             
             .hero-buttons {
                 justify-content: flex-start;
+            }
+
+            .btn-plans-cta {
+                font-size: 1.1rem;
             }
         }
 
@@ -4012,6 +4076,10 @@
             .floating-label.thinking {
                 bottom: -20px;
             }
+            
+            .btn-plans-cta {
+                font-size: 1.05rem;
+            }
         }
 
         @media (min-width: 431px) and (max-width: 480px) {
@@ -4031,6 +4099,10 @@
 
             .floating-label.thinking {
                 bottom: -18px;
+            }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
             }
         }
 
@@ -4072,6 +4144,10 @@
                 bottom: 3270px;
                 left: 90px;
             }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
+            }
         }
 
         @media (min-width: 391px) and (max-width: 414px) {
@@ -4111,6 +4187,10 @@
             .floating-label.leadership {
                 bottom: 3360px;
                 left: 90px;
+            }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
             }
         }
 
@@ -4152,6 +4232,10 @@
                 bottom: 2px;
                 left: 2px;
             }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
+            }
         }
 
         @media (min-width: 345px) and (max-width: 360px) {
@@ -4191,6 +4275,10 @@
             .floating-label.leadership {
                 bottom: 1px;
                 left: 1px;
+            }
+
+            .btn-plans-cta {
+                font-size: 1.05rem;
             }
         }
 
@@ -4279,4 +4367,8 @@
             .cardinal-mark.southeast { bottom: 0px; right: 0px; }
             .cardinal-mark.southwest { bottom: 0px; left: 0px; }
             .cardinal-mark.northwest { top: 0px; left: 0px; }
+
+            .btn-plans-cta {
+                font-size: 1rem;
+            }
         }
