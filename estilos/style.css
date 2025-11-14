@@ -252,6 +252,7 @@ body {
   transition: all 0.3s ease;
   position: relative;
   font-size: 1.2rem;
+  padding-right: 5px;
 }
 
 .navbar-nav .nav-link::after {
@@ -4626,7 +4627,7 @@ body {
 }
 
 .quality-seal-container {
-  max-width: 200px;
+  max-width: 240px;
   width: 100%;
 }
 
@@ -4638,7 +4639,7 @@ body {
 
 /* Selo Horizontal */
 .quality-seal-horizontal-container {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
 }
 
