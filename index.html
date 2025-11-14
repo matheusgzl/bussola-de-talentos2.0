@@ -1,183 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bússola de Talentos - Descubra Seu Potencial</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- Tech Background -->
-    <div class="tech-background">
-      <div class="matrix-rain" id="matrixRain"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bússola de Talentos - Descubra Seu Potencial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Tech Background -->
+  <div class="tech-background">
+    <div class="matrix-rain" id="matrixRain"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-compass me-2"></i>Bússola dos Talentos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">A Bússola</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">Como Funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Produto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <i class="fas fa-compass me-2"></i>Bússola dos Talentos
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">A Bússola</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how-it-works">Como Funciona</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#product">Produto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#depoimentos">Depoimentos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="hero-content">
-              <h1>
-                Descubra Seus <span class="highlight">Talentos Potenciais</span>
-              </h1>
-              <p>
-                Você sabe quais são seus verdadeiros pontos fortes? A Bússola
-                dos Talentos revela o que há de mais forte em você!<br />Após
-                acessar o app, a bússola trará seus talentos potenciais, seus
-                talentos fortes e seus talentos moderados. E ai, bora descobrir
-                seus pontos fortes?
-              </p>
-              <button
-                class="btn btn-cta btn-lg"
-                onclick="scrollToSection('product')"
-              >
-                <i class="fas fa-rocket me-2"></i>Quero Descobrir Agora!
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-visual">
-              <div class="neural-graphic">
-                <img
-                  src="imagens/silhueta-neural-transparente.png"
-                  alt="Silhueta com conexões neurais"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="tech-particles">
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Bússola Section -->
-    <section id="about" class="about-bussola">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col-12">
-            <h2 class="section-title animate-on-scroll">
-              O que é a Bússola dos Talentos?
-            </h2>
-            <p class="section-subtitle animate-on-scroll">
-              A ferramenta mais avançada para descobrir e potencializar seus
-              pontos fortes.
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-content">
+            <h1>
+              Descubra Seus <span class="highlight">Talentos Potenciais</span>
+            </h1>
+            <p>
+              Você sabe quais são seus verdadeiros pontos fortes? A Bússola
+              dos Talentos revela o que há de mais forte em você!<br />Após
+              acessar o app, a bússola trará seus talentos potenciais, seus
+              talentos fortes e seus talentos moderados. E ai, bora descobrir
+              seus pontos fortes?
             </p>
+            <button class="btn btn-cta btn-lg" onclick="scrollToSection('product')">
+              <i class="fas fa-rocket me-2"></i>Quero Descobrir Agora!
+            </button>
           </div>
         </div>
+        <div class="col-lg-5">
+          <div class="hero-visual">
+            <div class="neural-graphic">
+              <img src="imagens/silhueta-neural-transparente.png" alt="Silhueta com conexões neurais"
+                class="img-fluid" />
+            </div>
+            <div class="tech-particles">
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="row align-items-center justify-content-center min-vh-100">
-          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12 mb-4 mb-lg-0">
-            <div class="d-flex justify-content-center position-relative">
-              <div class="advanced-compass mx-auto">
-                <!-- Outer Ring with Cardinal Points -->
-                <div class="compass-outer-ring">
-                  <div class="cardinal-mark north d-md-block">N</div>
-                  <div class="cardinal-mark south d-md-block">S</div>
-                  <div class="cardinal-mark east d-md-block">L</div>
-                  <div class="cardinal-mark west d-md-block">O</div>
-                  <div class="cardinal-mark northeast d-md-block">NE</div>
-                  <div class="cardinal-mark southeast d-md-block">SE</div>
-                  <div class="cardinal-mark southwest d-md-block">SO</div>
-                  <div class="cardinal-mark northwest d-md-block">NO</div>
-                </div>
+  <!-- About Bússola Section -->
+  <section id="about" class="about-bussola">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="section-title animate-on-scroll">
+            O que é a Bússola dos Talentos?
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            A ferramenta mais avançada para descobrir e potencializar seus
+            pontos fortes.
+          </p>
+        </div>
+      </div>
 
-                <!-- Middle Ring -->
-                <div class="compass-middle-ring"></div>
-
-                <!-- Direction Marks -->
-                <div class="direction-marks">
-                  <div class="direction-mark north"></div>
-                  <div class="direction-mark south"></div>
-                  <div class="direction-mark east"></div>
-                  <div class="direction-mark west"></div>
-                  <div class="direction-mark northeast"></div>
-                  <div class="direction-mark southeast"></div>
-                  <div class="direction-mark southwest"></div>
-                  <div class="direction-mark northwest"></div>
-                </div>
-
-                <!-- Inner Rotating Disc -->
-                <div class="compass-inner-disc"></div>
-
-                <!-- Main Needle -->
-                <div class="compass-main-needle">
-                  <div class="needle-north"></div>
-                  <div class="needle-south"></div>
-                </div>
-
-                <!-- Center Icon -->
-                <div class="compass-center">
-                  <i class="fas fa-compass"></i>
-                </div>
+      <div class="row align-items-center justify-content-center min-vh-100">
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12 mb-4 mb-lg-0">
+          <div class="d-flex justify-content-center position-relative">
+            <div class="advanced-compass mx-auto">
+              <!-- Outer Ring with Cardinal Points -->
+              <div class="compass-outer-ring">
+                <div class="cardinal-mark north d-md-block">N</div>
+                <div class="cardinal-mark south d-md-block">S</div>
+                <div class="cardinal-mark east d-md-block">L</div>
+                <div class="cardinal-mark west d-md-block">O</div>
+                <div class="cardinal-mark northeast d-md-block">NE</div>
+                <div class="cardinal-mark southeast d-md-block">SE</div>
+                <div class="cardinal-mark southwest d-md-block">SO</div>
+                <div class="cardinal-mark northwest d-md-block">NO</div>
               </div>
 
-              <!-- Floating Labels -->
-              <div class="floating-labels d-none d-md-block">
-                <div class="floating-label executing">Execução</div>
-                <div class="floating-label influencing">Influência</div>
-                <div class="floating-label relationship">Relacionamento</div>
-                <div class="floating-label thinking">Pensamento</div>
-                <div class="floating-label creativity">Criatividade</div>
-                <div class="floating-label leadership">Liderança</div>
+              <!-- Middle Ring -->
+              <div class="compass-middle-ring"></div>
+
+              <!-- Direction Marks -->
+              <div class="direction-marks">
+                <div class="direction-mark north"></div>
+                <div class="direction-mark south"></div>
+                <div class="direction-mark east"></div>
+                <div class="direction-mark west"></div>
+                <div class="direction-mark northeast"></div>
+                <div class="direction-mark southeast"></div>
+                <div class="direction-mark southwest"></div>
+                <div class="direction-mark northwest"></div>
+              </div>
+
+              <!-- Inner Rotating Disc -->
+              <div class="compass-inner-disc"></div>
+
+              <!-- Main Needle -->
+              <div class="compass-main-needle">
+                <div class="needle-north"></div>
+                <div class="needle-south"></div>
+              </div>
+
+              <!-- Center Icon -->
+              <div class="compass-center">
+                <i class="fas fa-compass"></i>
               </div>
             </div>
 
-            <!-- Mobile Floating Labels -->
-            <div class="floating-labels d-md-none">
+            <!-- Floating Labels -->
+            <div class="floating-labels d-none d-md-block">
               <div class="floating-label executing">Execução</div>
               <div class="floating-label influencing">Influência</div>
               <div class="floating-label relationship">Relacionamento</div>
@@ -187,233 +161,219 @@
             </div>
           </div>
 
-          <div class="col-xl-5 col-lg-6 col-md-10 col-12">
-            <div class="bussola-content px-lg-4 mt-5 mt-lg-0">
-              <h3 class="content-title text-center text-lg-start">
-                Sua Bússola para o Sucesso
-              </h3>
-              <p class="content-description text-center text-lg-start">
-                A bússola dos talentos é um método baseado nos estudos de
-                comportamentos e psicologia humana. Nela você descobre seus
-                <strong>42 talentos únicos</strong> e aprenderá como
-                transformá-los em vantagens competitivas!
-              </p>
-              <div class="bussola-features">
-                <div class="feature-item">
-                  <div class="feature-icon-small">
-                    <i class="fas fa-microscope"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Base Científica Comprovada</h4>
-                    <p>
-                      Desenvolvida e validada por Especialistas Comportamentais.
-                    </p>
-                  </div>
+          <!-- Mobile Floating Labels -->
+          <div class="floating-labels d-md-none">
+            <div class="floating-label executing">Execução</div>
+            <div class="floating-label influencing">Influência</div>
+            <div class="floating-label relationship">Relacionamento</div>
+            <div class="floating-label thinking">Pensamento</div>
+            <div class="floating-label creativity">Criatividade</div>
+            <div class="floating-label leadership">Liderança</div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 col-lg-6 col-md-10 col-12">
+          <div class="bussola-content px-lg-4 mt-5 mt-lg-0">
+            <h3 class="content-title text-center text-lg-start">
+              Sua Bússola para o Sucesso
+            </h3>
+            <p class="content-description text-center text-lg-start">
+              A bússola dos talentos é um método baseado nos estudos de
+              comportamentos e psicologia humana. Nela você descobre seus
+              <strong>42 talentos únicos</strong> e aprenderá como
+              transformá-los em vantagens competitivas!
+            </p>
+            <div class="bussola-features">
+              <div class="feature-item">
+                <div class="feature-icon-small">
+                  <i class="fas fa-microscope"></i>
                 </div>
-                <div class="feature-item">
-                  <div class="feature-icon-small">
-                    <i class="fas fa-fingerprint"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Relatório de Pontos Fortes</h4>
-                    <p>
-                      Não apenas identifica seus talentos, mas mostra exatamente
-                      como aplicá-los na vida real.
-                    </p>
-                  </div>
+                <div class="feature-text">
+                  <h4>Base Científica Comprovada</h4>
+                  <p>
+                    Desenvolvida e validada por Especialistas Comportamentais.
+                  </p>
                 </div>
-                <div class="feature-item">
-                  <div class="feature-icon-small">
-                    <i class="fas fa-route"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Perfil 100% Personalizado</h4>
-                    <p>
-                      Seus talentos são únicos como sua impressão digital,
-                      apenas 1 em 33 milhões de pessoas tem a mesma combinação.
-                    </p>
-                  </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon-small">
+                  <i class="fas fa-fingerprint"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Relatório de Pontos Fortes</h4>
+                  <p>
+                    Não apenas identifica seus talentos, mas mostra exatamente
+                    como aplicá-los na vida real.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon-small">
+                  <i class="fas fa-route"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Perfil 100% Personalizado</h4>
+                  <p>
+                    Seus talentos são únicos como sua impressão digital,
+                    apenas 1 em 33 milhões de pessoas tem a mesma combinação.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="talent-domains animate-on-scroll">
-              <h3 class="domains-title">Os 6 Grupos de Talentos</h3>
-              <p class="domains-subtitle">
-                Todos os 42 talentos se organizam em 6 grandes grupos. Descubra
-                onde você é naturalmente forte!
-              </p>
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="talent-domains animate-on-scroll">
+            <h3 class="domains-title">Os 6 Grupos de Talentos</h3>
+            <p class="domains-subtitle">
+              Todos os 42 talentos se organizam em 6 grandes grupos. Descubra
+              onde você é naturalmente forte!
+            </p>
 
-              <!-- Grid responsivo: 3 caixas em desktop, 2 em tablet, 1 em mobile -->
-              <div class="row g-4">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square executing h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-adjust"></i>
-                    </div>
-                    <h4>⚖️ ADAPTABILIDADE E DECISÃO</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Adaptabilidade sabem como se
-                      ajustar rapidamente e tomar decisões eficazes
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Autônomo</span>
-                        <span class="talent-tag">Catalisador</span>
-                        <span class="talent-tag">Convicto</span>
-                        <span class="talent-tag">Decisor</span>
-                        <span class="talent-tag">Flexível</span>
-                        <span class="talent-tag">Lógico</span>
-                        <span class="talent-tag">Resiliente</span>
-                      </div>
+            <!-- Grid responsivo: 3 caixas em desktop, 2 em tablet, 1 em mobile -->
+            <div class="row g-4">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square executing h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-adjust"></i>
+                  </div>
+                  <h4>⚖️ ADAPTABILIDADE E DECISÃO</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Adaptabilidade sabem como se
+                    ajustar rapidamente e tomar decisões eficazes
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Autônomo</span>
+                      <span class="talent-tag">Catalisador</span>
+                      <span class="talent-tag">Convicto</span>
+                      <span class="talent-tag">Decisor</span>
+                      <span class="talent-tag">Flexível</span>
+                      <span class="talent-tag">Lógico</span>
+                      <span class="talent-tag">Resiliente</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square influencing h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-crown"></i>
-                    </div>
-                    <h4>👑 LIDERANÇA E INTELIGÊNCIA</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Liderança sabem como inspirar
-                      outros e aplicar inteligência estratégica
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Energizador</span>
-                        <span class="talent-tag">Impactante</span>
-                        <span class="talent-tag">Influente</span>
-                        <span class="talent-tag">Motivador</span>
-                        <span class="talent-tag">Orquestrador</span>
-                        <span class="talent-tag">Persuasivo</span>
-                        <span class="talent-tag">Potencializador</span>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square influencing h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-crown"></i>
+                  </div>
+                  <h4>👑 LIDERANÇA E INTELIGÊNCIA</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Liderança sabem como inspirar
+                    outros e aplicar inteligência estratégica
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Energizador</span>
+                      <span class="talent-tag">Impactante</span>
+                      <span class="talent-tag">Influente</span>
+                      <span class="talent-tag">Motivador</span>
+                      <span class="talent-tag">Orquestrador</span>
+                      <span class="talent-tag">Persuasivo</span>
+                      <span class="talent-tag">Potencializador</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square relationship h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-comments"></i>
-                    </div>
-                    <h4>💬 COMUNICAÇÃO E CONEXÕES</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Comunicação sabem como conectar e
-                      construir relacionamentos sólidos
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Compreensível</span>
-                        <span class="talent-tag">Facilitador</span>
-                        <span class="talent-tag">Inspirador</span>
-                        <span class="talent-tag">Mediador</span>
-                        <span class="talent-tag">Pacificador</span>
-                        <span class="talent-tag">Personalizador</span>
-                        <span class="talent-tag">Relacional</span>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square relationship h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <h4>💬 COMUNICAÇÃO E CONEXÕES</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Comunicação sabem como conectar e
+                    construir relacionamentos sólidos
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Compreensível</span>
+                      <span class="talent-tag">Facilitador</span>
+                      <span class="talent-tag">Inspirador</span>
+                      <span class="talent-tag">Mediador</span>
+                      <span class="talent-tag">Pacificador</span>
+                      <span class="talent-tag">Personalizador</span>
+                      <span class="talent-tag">Relacional</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square thinking h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-chess"></i>
-                    </div>
-                    <h4>♟️ ESTRATÉGIA E VISÃO</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Estratégia sabem como planejar o
-                      futuro e criar visões inspiradoras
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Autoavaliador</span>
-                        <span class="talent-tag">Convicção</span>
-                        <span class="talent-tag">Empreendedor</span>
-                        <span class="talent-tag">Precavido</span>
-                        <span class="talent-tag">Racional</span>
-                        <span class="talent-tag">Sistemático</span>
-                        <span class="talent-tag">Tático</span>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square thinking h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-chess"></i>
+                  </div>
+                  <h4>♟️ ESTRATÉGIA E VISÃO</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Estratégia sabem como planejar o
+                    futuro e criar visões inspiradoras
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Autoavaliador</span>
+                      <span class="talent-tag">Convicção</span>
+                      <span class="talent-tag">Empreendedor</span>
+                      <span class="talent-tag">Precavido</span>
+                      <span class="talent-tag">Racional</span>
+                      <span class="talent-tag">Sistemático</span>
+                      <span class="talent-tag">Tático</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square creativity h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-palette"></i>
-                    </div>
-                    <h4>🎨 CRIAÇÃO E INOVAÇÃO</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Criação sabem como inovar e
-                      desenvolver soluções originais
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Aplicado</span>
-                        <span class="talent-tag">Explorador</span>
-                        <span class="talent-tag">Historiador</span>
-                        <span class="talent-tag">Inovador</span>
-                        <span class="talent-tag">Pioneiro</span>
-                        <span class="talent-tag">Solucionador</span>
-                        <span class="talent-tag">Visionário</span>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square creativity h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-palette"></i>
+                  </div>
+                  <h4>🎨 CRIAÇÃO E INOVAÇÃO</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Criação sabem como inovar e
+                    desenvolver soluções originais
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Aplicado</span>
+                      <span class="talent-tag">Explorador</span>
+                      <span class="talent-tag">Historiador</span>
+                      <span class="talent-tag">Inovador</span>
+                      <span class="talent-tag">Pioneiro</span>
+                      <span class="talent-tag">Solucionador</span>
+                      <span class="talent-tag">Visionário</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <div
-                    class="domain-card-square performance h-100 d-flex flex-column"
-                  >
-                    <div class="domain-icon-square">
-                      <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h4>⚡ EFICIÊNCIA E PERFORMANCE</h4>
-                    <p class="domain-description flex-grow-1">
-                      Pessoas com talentos de Eficiência sabem como otimizar
-                      processos e alcançar alta performance
-                    </p>
-                    <div class="domain-talents mt-auto mb-3">
-                      <div
-                        class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto"
-                      >
-                        <span class="talent-tag">Comprometido</span>
-                        <span class="talent-tag">Consistente</span>
-                        <span class="talent-tag">Determinado</span>
-                        <span class="talent-tag">Estruturador</span>
-                        <span class="talent-tag">Executor</span>
-                        <span class="talent-tag">Impulsionador</span>
-                        <span class="talent-tag">Intensificador</span>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="domain-card-square performance h-100 d-flex flex-column">
+                  <div class="domain-icon-square">
+                    <i class="fas fa-tachometer-alt"></i>
+                  </div>
+                  <h4>⚡ EFICIÊNCIA E PERFORMANCE</h4>
+                  <p class="domain-description flex-grow-1">
+                    Pessoas com talentos de Eficiência sabem como otimizar
+                    processos e alcançar alta performance
+                  </p>
+                  <div class="domain-talents mt-auto mb-3">
+                    <div class="talent-tags d-flex flex-wrap justify-content-center gap-2 mt-auto">
+                      <span class="talent-tag">Comprometido</span>
+                      <span class="talent-tag">Consistente</span>
+                      <span class="talent-tag">Determinado</span>
+                      <span class="talent-tag">Estruturador</span>
+                      <span class="talent-tag">Executor</span>
+                      <span class="talent-tag">Impulsionador</span>
+                      <span class="talent-tag">Intensificador</span>
                     </div>
                   </div>
                 </div>
@@ -422,1035 +382,922 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works-section">
-      <div class="container">
-        <div class="how-it-works-container animate-on-scroll">
-          <h2 class="works-main-title">Como Funciona a Bússola de Talentos?</h2>
-          <p class="works-main-subtitle">
-            Um processo científico revolucionário em 3 etapas simples para
-            descobrir seus superpoderes únicos
-          </p>
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works-section">
+    <div class="container">
+      <div class="how-it-works-container animate-on-scroll">
+        <h2 class="works-main-title">Como Funciona a Bússola de Talentos?</h2>
+        <p class="works-main-subtitle">
+          Um processo científico revolucionário em 3 etapas simples para
+          descobrir seus superpoderes únicos
+        </p>
 
-          <!-- Bootstrap responsive grid for process flow -->
-          <div class="row g-4 align-items-stretch justify-content-center">
-            <!-- Step 1 -->
-            <div class="col-lg-3 col-md-12">
-              <div
-                class="process-step h-100 d-flex flex-column justify-content-between text-center"
-              >
-                <div>
-                  <div class="step-number-circle">1</div>
-                  <h3 class="step-title">MAPEAMENTO</h3>
-                  <p class="step-description">
-                    Responda as questões estratégicas. Cada pergunta mede
-                    padrões naturais de comportamentos, pensamentos e aptidão.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Arrow 1 - Hidden on mobile, visible on desktop -->
-            <div
-              class="col-lg-1 d-none d-lg-flex justify-content-center align-items-center"
-            >
-              <div class="process-arrow-horizontal">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
-
-            <!-- Mobile Arrow 1 - Visible only on mobile -->
-            <div class="col-12 d-lg-none d-flex justify-content-center">
-              <div class="process-arrow process-arrow-mobile">
-                <i class="fas fa-arrow-down"></i>
-              </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="col-lg-3 col-md-12">
-              <div
-                class="process-step h-100 d-flex flex-column justify-content-between text-center"
-              >
-                <div>
-                  <div class="step-number-circle">2</div>
-                  <h3 class="step-title">ANÁLISE</h3>
-                  <p class="step-description">
-                    Nossa análise avançada identifica seus 10 talentos
-                    potenciais dos 42 possíveis.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Arrow 2 - Hidden on mobile, visible on desktop -->
-            <div
-              class="col-lg-1 d-none d-lg-flex justify-content-center align-items-center"
-            >
-              <div class="process-arrow-horizontal">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
-
-            <!-- Mobile Arrow 2 - Visible only on mobile -->
-            <div class="col-12 d-lg-none d-flex justify-content-center">
-              <div class="process-arrow process-arrow-mobile">
-                <i class="fas fa-arrow-down"></i>
-              </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="col-lg-3 col-md-12">
-              <div
-                class="process-step h-100 d-flex flex-column justify-content-between text-center"
-              >
-                <div>
-                  <div class="step-number-circle">3</div>
-                  <h3 class="step-title">RESULTADO</h3>
-                  <p class="step-description">
-                    Tenha um resultado detalhado dos seus principais pontos
-                    fortes e esteja na frente!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Strategic CTA within How It Works -->
-          <div class="text-center mt-4">
-            <button
-              class="btn btn-strategic-cta animate-on-scroll"
-              onclick="scrollToSection('product')"
-            >
-              <i class="fas fa-rocket me-2"></i>QUERO DESCOBRIR AGORA!
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Desire Section -->
-    <section class="desire-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="desire-content text-center">
-              <h2 class="desire-title animate-on-scroll">
-                Pare de desperdiçar seu potencial...
-                <span class="highlight-pulse">
-                  Descubra o que você faz de melhor agora!</span
-                >
-              </h2>
-              <div class="desire-grid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="desire-card pain-point animate-on-scroll">
-                      <div class="desire-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                      </div>
-                      <h4 class="fs-4 fw-bold text-white">
-                        NÃO CONHECENDO SEUS TALENTOS
-                      </h4>
-                      <ul class="pain-list">
-                        <li>
-                          <i class="fas fa-times-circle"></i>Trabalhando em algo
-                          que não te realiza
-                        </li>
-                        <li>
-                          <i class="fas fa-times-circle"></i>Ganhando menos do
-                          que merece
-                        </li>
-                        <li>
-                          <i class="fas fa-times-circle"></i>Sentindo que "algo
-                          está faltando"
-                        </li>
-                        <li>
-                          <i class="fas fa-times-circle"></i>Vendo outros
-                          prosperarem enquanto você estagnou
-                        </li>
-                        <li>
-                          <i class="fas fa-times-circle"></i>Desperdiçando seu
-                          verdadeiro potencial
-                        </li>
-                      </ul>
-                      <div class="text" id="texto-vermelho">
-                        <strong
-                          >Você está perdendo oportunidades todos os
-                          dias</strong
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="desire-card solution-point animate-on-scroll">
-                      <div class="desire-icon">
-                        <i class="fas fa-star"></i>
-                      </div>
-                      <h4 class="fs-4 fw-bold text-white">
-                        CONHECENDO SEUS PONTOS FORTES!
-                      </h4>
-                      <ul class="solution-list">
-                        <li>
-                          <i class="fas fa-check-circle"></i>Trabalhar com
-                          paixão e propósito
-                        </li>
-                        <li>
-                          <i class="fas fa-check-circle"></i>Triplicar sua renda
-                          em 12 meses
-                        </li>
-                        <li>
-                          <i class="fas fa-check-circle"></i>Ser reconhecido
-                          como especialista
-                        </li>
-                        <li>
-                          <i class="fas fa-check-circle"></i>Acordar animado
-                          para trabalhar
-                        </li>
-                        <li>
-                          <i class="fas fa-check-circle"></i>Realizar seu
-                          verdadeiro potencial
-                        </li>
-                      </ul>
-                      <div class="text" id="texto-verde">
-                        <strong>Conquistando resultados extraordinários</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="revelation-box animate-on-scroll">
-                <h3>🔥 REVELAÇÃO CHOCANTE:</h3>
-                <p class="revelation-text">
-                  <strong
-                    >97% das pessoas nunca descobrem seus verdadeiros
-                    talentos</strong
-                  >
-                  e passam a vida inteira trabalhando "no piloto automático".
-                  Elas morrem com seus dons enterrados, sem nunca saber o que
-                  poderiam ter conquistado.
+        <!-- Bootstrap responsive grid for process flow -->
+        <div class="row g-4 align-items-stretch justify-content-center">
+          <!-- Step 1 -->
+          <div class="col-lg-3 col-md-12">
+            <div class="process-step h-100 d-flex flex-column justify-content-between text-center">
+              <div>
+                <div class="step-number-circle">1</div>
+                <h3 class="step-title">MAPEAMENTO</h3>
+                <p class="step-description">
+                  Responda as questões estratégicas. Cada pergunta mede
+                  padrões naturais de comportamentos, pensamentos e aptidão.
                 </p>
-                <div class="stats-row">
-                  <div class="stat-item">
-                    <div class="stat-number">73%</div>
-                    <div class="stat-text">Odeiam o trabalho</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow 1 - Hidden on mobile, visible on desktop -->
+          <div class="col-lg-1 d-none d-lg-flex justify-content-center align-items-center">
+            <div class="process-arrow-horizontal">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Mobile Arrow 1 - Visible only on mobile -->
+          <div class="col-12 d-lg-none d-flex justify-content-center">
+            <div class="process-arrow process-arrow-mobile">
+              <i class="fas fa-arrow-down"></i>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-lg-3 col-md-12">
+            <div class="process-step h-100 d-flex flex-column justify-content-between text-center">
+              <div>
+                <div class="step-number-circle">2</div>
+                <h3 class="step-title">ANÁLISE</h3>
+                <p class="step-description">
+                  Nossa análise avançada identifica seus 10 talentos
+                  potenciais dos 42 possíveis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow 2 - Hidden on mobile, visible on desktop -->
+          <div class="col-lg-1 d-none d-lg-flex justify-content-center align-items-center">
+            <div class="process-arrow-horizontal">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Mobile Arrow 2 - Visible only on mobile -->
+          <div class="col-12 d-lg-none d-flex justify-content-center">
+            <div class="process-arrow process-arrow-mobile">
+              <i class="fas fa-arrow-down"></i>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-lg-3 col-md-12">
+            <div class="process-step h-100 d-flex flex-column justify-content-between text-center">
+              <div>
+                <div class="step-number-circle">3</div>
+                <h3 class="step-title">RESULTADO</h3>
+                <p class="step-description">
+                  Tenha um resultado detalhado dos seus principais pontos
+                  fortes e esteja na frente!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strategic CTA within How It Works -->
+        <div class="text-center mt-4">
+          <button class="btn btn-strategic-cta animate-on-scroll" onclick="scrollToSection('product')">
+            <i class="fas fa-rocket me-2"></i>QUERO DESCOBRIR AGORA!
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desire Section -->
+  <section class="desire-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="desire-content text-center">
+            <h2 class="desire-title animate-on-scroll">
+              Pare de desperdiçar seu potencial...
+              <span class="highlight-pulse">
+                Descubra o que você faz de melhor agora!</span>
+            </h2>
+            <div class="desire-grid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="desire-card pain-point animate-on-scroll">
+                    <div class="desire-icon">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h4 class="fs-4 fw-bold text-white">
+                      NÃO CONHECENDO SEUS TALENTOS
+                    </h4>
+                    <ul class="pain-list">
+                      <li>
+                        <i class="fas fa-times-circle"></i>Trabalhando em algo
+                        que não te realiza
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle"></i>Ganhando menos do
+                        que merece
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle"></i>Sentindo que "algo
+                        está faltando"
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle"></i>Vendo outros
+                        prosperarem enquanto você estagnou
+                      </li>
+                      <li>
+                        <i class="fas fa-times-circle"></i>Desperdiçando seu
+                        verdadeiro potencial
+                      </li>
+                    </ul>
+                    <div class="text" id="texto-vermelho">
+                      <strong>Você está perdendo oportunidades todos os
+                        dias</strong>
+                    </div>
                   </div>
-                  <div class="stat-item">
-                    <div class="stat-number">89%</div>
-                    <div class="stat-text">Ganham menos que merecem</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-number">94%</div>
-                    <div class="stat-text">Sentem-se perdidos</div>
+                </div>
+                <div class="col-md-6">
+                  <div class="desire-card solution-point animate-on-scroll">
+                    <div class="desire-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="fs-4 fw-bold text-white">
+                      CONHECENDO SEUS PONTOS FORTES!
+                    </h4>
+                    <ul class="solution-list">
+                      <li>
+                        <i class="fas fa-check-circle"></i>Trabalhar com
+                        paixão e propósito
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i>Triplicar sua renda
+                        em 12 meses
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i>Ser reconhecido
+                        como especialista
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i>Acordar animado
+                        para trabalhar
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i>Realizar seu
+                        verdadeiro potencial
+                      </li>
+                    </ul>
+                    <div class="text" id="texto-verde">
+                      <strong>Conquistando resultados extraordinários</strong>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="text-center mt-4">
-                <button
-                  class="btn btn-strategic-cta animate-on-scroll"
-                  onclick="scrollToSection('product')"
-                >
-                  <i class="fas fa-rocket me-2"></i>QUERO DESCOBRIR AGORA!
-                </button>
+            <div class="revelation-box animate-on-scroll">
+              <h3>🔥 REVELAÇÃO CHOCANTE:</h3>
+              <p class="revelation-text">
+                <strong>97% das pessoas nunca descobrem seus verdadeiros
+                  talentos</strong>
+                e passam a vida inteira trabalhando "no piloto automático".
+                Elas morrem com seus dons enterrados, sem nunca saber o que
+                poderiam ter conquistado.
+              </p>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <div class="stat-number">73%</div>
+                  <div class="stat-text">Odeiam o trabalho</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">89%</div>
+                  <div class="stat-text">Ganham menos que merecem</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">94%</div>
+                  <div class="stat-text">Sentem-se perdidos</div>
+                </div>
               </div>
+            </div>
 
-              <div class="transformation-promise animate-on-scroll">
-                <h3 class="promise-title">
-                  <i class="fas fa-columns me-2"></i>
-                  Você está Desperdiçando seus Talentos?
-                </h3>
-                <p
-                  style="
+            <div class="text-center mt-4">
+              <button class="btn btn-strategic-cta animate-on-scroll" onclick="scrollToSection('product')">
+                <i class="fas fa-rocket me-2"></i>QUERO DESCOBRIR AGORA!
+              </button>
+            </div>
+
+            <div class="transformation-promise animate-on-scroll">
+              <h3 class="promise-title">
+                <i class="fas fa-columns me-2"></i>
+                Você está Desperdiçando seus Talentos?
+              </h3>
+              <p style="
                     color: var(--neon-green);
                     margin-bottom: 1rem;
                     font-size: 1.8rem;
                     font-weight: 700;
                     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.349);
-                  "
-                >
-                  Seu perfil está aqui. A pergunta é: o que você vai fazer com
-                  ele?
-                </p>
-
-                <!-- Mobile Screenshots Section -->
-                <div class="mobile-screenshots-section mb-5">
-                  <div class="row g-4 justify-content-center">
-                    <!-- Screenshot 1 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                      <div class="mobile-screenshot-container">
-                        <div class="mobile-frame">
-                          <div class="mobile-screen">
-                            <div class="screenshot-placeholder">
-                              <img
-                                src="imagens/print1.jpg"
-                                alt="Screenshot"
-                                class="screenshot-image img-fluid"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Screenshot 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                      <div class="mobile-screenshot-container">
-                        <div class="mobile-frame">
-                          <div class="mobile-screen">
-                            <div class="screenshot-placeholder">
-                              <img
-                                src="imagens/print2.jpg"
-                                alt="Screenshot"
-                                class="screenshot-image img-fluid"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="offer-card animate-on-scroll">
-                  <div class="offer-header">
-                    <div class="offer-badge">
-                      <i class="fas fa-clock me-2"></i>
-                      <span>OFERTA RELÂMPAGO</span>
-                    </div>
-                    <h3 class="offer-subtitle">
-                      Descubra Seus Talentos com
-                      <span class="highlight-price">70% OFF</span>
-                    </h3>
-                  </div>
-
-                  <div
-                    class="countdown-timer d-flex justify-content-center gap-2 gap-sm-3 mb-3"
-                  >
-                    <div class="time-unit">
-                      <div class="time-number" id="hours">23</div>
-                      <div class="time-label">HORAS</div>
-                    </div>
-                    <div class="time-separator">:</div>
-                    <div class="time-unit">
-                      <div class="time-number" id="minutes">45</div>
-                      <div class="time-label">MIN</div>
-                    </div>
-                    <div class="time-separator">:</div>
-                    <div class="time-unit">
-                      <div class="time-number" id="seconds">32</div>
-                      <div class="time-label">SEG</div>
-                    </div>
-                  </div>
-
-                  <div class="offer-content">
-                    <div class="row justify-content-center">
-                      <div class="col-lg-8 col-md-10 col-12">
-                        <div class="price-comparison">
-                          <div class="row g-3">
-                            <div class="col-md-6 col-12">
-                              <div class="old-price text-center text-md-start">
-                                <span class="price-label">Preço Normal:</span>
-                                <span class="price-value">R$ 99,90</span>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                              <div class="new-price text-center text-md-start">
-                                <span class="price-label">Hoje Apenas:</span>
-                                <span class="price-value">R$ 29,90</span>
-                                <div class="mt-2">
-                                  <span class="savings"
-                                    >Economia de R$ 70!</span
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="offer-cta">
-                    <button
-                      class="btn btn-plans-cta animate-on-scroll"
-                      onclick="scrollToSection('product')"
-                    >
-                      <i class="fas fa-bolt me-2"></i>GARANTIR MINHA VAGA AGORA!
-                    </button>
-                    <div class="offer-guarantee">
-                      <i class="fas fa-shield-alt"></i>
-                      <span
-                        >Garantia incondicional de 60 dias ou seu dinheiro de
-                        volta</span
-                      >
-                    </div>
-                    <div class="urgency-text">
-                      ⚠️ Apenas 47 vagas restantes neste preço!
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section
-      id="depoimentos"
-      class="content-section"
-      style="padding: 50px 0 140px 0"
-    >
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 col-xl-8">
-            <h2 class="section-title text-center mb-4">Transformações Reais</h2>
-            <p class="text-center text-light fs-5 mb-5">
-              Mais de 15.000 pessoas já descobriram seus talentos únicos e
-              transformaram suas carreiras
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div
-              id="testimonialsCarousel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-              data-bs-interval="4000"
-            >
-              <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                  <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "Descobri que meu talento principal é Estratégia. Em
-                            3 meses consegui uma promoção para gerente e
-                            aumentei meu salário em 40%!"
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/Marina Silva-fotor-2025101316397.png"
-                                alt="Marina Silva"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Marina Silva</h5>
-                              <span>Gerente de Marketing</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "Sempre soube que era criativo, mas não sabia como
-                            aplicar. O relatório me mostrou caminhos que nunca
-                            imaginei existir!"
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/carlos-mendes-transparente-fotor-2025101316380.png"
-                                alt="carlos Mendes"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Carlos Mendes</h5>
-                              <span>Designer UX/UI</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                  <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "Meus talentos de Comunicação me ajudaram a entender
-                            por que me destaco em apresentações. Agora lidero
-                            todos os treinamentos!"
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/Ana paula-fotor-2025101316406.png"
-                                alt="Ana paula"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Ana Paula</h5>
-                              <span>Consultora de Vendas</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "Descobrir meus talentos de Liderança me deu
-                            confiança para abrir minha própria empresa. Hoje
-                            tenho uma equipe de 20 pessoas!"
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/Roberto Santos-fotor-20251013164411.png"
-                                alt="Roberto Santos"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Roberto Santos</h5>
-                              <span>CEO & Fundador</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                  <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "Estava perdida na carreira até descobrir meus
-                            talentos de Adaptabilidade. Mudei de área e nunca
-                            fui tão realizada profissionalmente!"
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/Juliana Costa-fotor-20251013164336.png"
-                                alt="Juliana Costa"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Juliana Costa</h5>
-                              <span>Analista de Dados</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="testimonial h-100">
-                        <div class="testimonial-content">
-                          <div class="stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <p class="testimonial-text">
-                            "O relatório foi um divisor de águas! Entendi por
-                            que me destaco em eficiência e consegui otimizar
-                            toda a operação da equipe."
-                          </p>
-                          <div class="testimonial-author">
-                            <div class="author-avatar">
-                              <img
-                                src="imagens/Pedro Oliveira-fotor-20251013164455.png"
-                                alt="Pedro Oliveira"
-                                class="author-image"
-                              />
-                            </div>
-                            <div class="author-info">
-                              <h5>Pedro Oliveira</h5>
-                              <span>Coordenador de Projetos</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Carousel Indicators -->
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#testimonialsCarousel"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#testimonialsCarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#testimonialsCarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-
-              <!-- Carousel Controls -->
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#testimonialsCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#testimonialsCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Próximo</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Section -->
-    <section id="product" class="product">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col-12">
-            <h2 class="section-title animate-on-scroll">
-              Escolha Seu Plano de Transformação
-            </h2>
-            <p class="section-subtitle animate-on-scroll">
-              Opções para todos os perfis e necessidades
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <!-- Plano Básico -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="pricing-card basic animate-on-scroll">
-              <div class="plan-header">
-                <h3>Básico</h3>
-                <div class="plan-price">
-                  <span class="price-large">GRÁTIS</span>
-                </div>
-                <p class="plan-subtitle">Experimente nosso sistema</p>
-              </div>
-              <ul class="plan-features">
-                <li><i class="fas fa-check"></i>Teste dos talentos (1 vez)</li>
-                <li>
-                  <i class="fas fa-check"></i>Acesso aos 10 principais talentos
-                </li>
-                <li><i class="fas fa-check"></i>Relatório básico</li>
-                <li><i class="fas fa-check"></i>Suporte por email</li>
-              </ul>
-              <button
-                class="btn btn-outline-cta"
-                onclick="openCheckout('basic')"
-              >
-                <i class="fas fa-play me-2"></i>Começar Grátis
-              </button>
-            </div>
-          </div>
-
-          <!-- Plano Premium (Destaque) -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="pricing-card premium featured animate-on-scroll">
-              <div class="popular-badge">MAIS POPULAR</div>
-              <div class="plan-header">
-                <h3>Premium</h3>
-                <div class="plan-price">
-                  <span class="price-old">De R$ 99,90</span>
-                  <span class="price-large">R$ 29,90</span>
-                  <span class="price-period">/mês</span>
-                  <span class="discount-badge">70% OFF</span>
-                </div>
-                <p class="plan-subtitle">Transformação completa individual</p>
-              </div>
-              <ul class="plan-features">
-                <li>
-                  <i class="fas fa-check"></i>Curso completo com 50+ técnicas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i>App exclusivo com timer Pomodoro
-                </li>
-                <li><i class="fas fa-check"></i>Templates de planejamento</li>
-                <li><i class="fas fa-check"></i>Protocolo de biohacking</li>
-                <li>
-                  <i class="fas fa-check"></i>6 meses de mentoria em grupo
-                </li>
-                <li><i class="fas fa-check"></i>Comunidade exclusiva</li>
-                <li><i class="fas fa-check"></i>Atualizações vitalícias</li>
-              </ul>
-              <button class="btn btn-cta" onclick="openCheckout('premium')">
-                <i class="fas fa-bolt me-2"></i>Comprar Agora
-              </button>
-              <p class="guarantee">
-                <i class="fas fa-shield-alt me-1"></i>Garantia de 60 dias
+                  ">
+                Seu perfil está aqui. A pergunta é: o que você vai fazer com
+                ele?
               </p>
-            </div>
-          </div>
 
-          <!-- Plano Business -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="pricing-card business animate-on-scroll">
-              <div class="plan-header">
-                <h3>Business</h3>
-                <div class="plan-price">
-                  <span class="price-large">R$ 149,90</span>
-                  <span class="price-period">/mês</span>
+              <!-- Mobile Screenshots Section -->
+              <div class="mobile-screenshots-section mb-5">
+                <div class="row g-4 justify-content-center">
+                  <!-- Screenshot 1 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mobile-screenshot-container">
+                      <div class="mobile-frame">
+                        <div class="mobile-screen">
+                          <div class="screenshot-placeholder">
+                            <img src="imagens/print1.jpg" alt="Screenshot" class="screenshot-image img-fluid" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Screenshot 2 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mobile-screenshot-container">
+                      <div class="mobile-frame">
+                        <div class="mobile-screen">
+                          <div class="screenshot-placeholder">
+                            <img src="imagens/print2.jpg" alt="Screenshot" class="screenshot-image img-fluid" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p class="plan-subtitle">Para empresas e equipes</p>
               </div>
-              <ul class="plan-features">
-                <li><i class="fas fa-check"></i>Até 50 usuários</li>
-                <li>
-                  <i class="fas fa-check"></i>Painel corporativo de talentos
-                </li>
-                <li><i class="fas fa-check"></i>Relatórios de equipe</li>
-                <li><i class="fas fa-check"></i>Consultor dedicado</li>
-                <li><i class="fas fa-check"></i>Treinamentos personalizados</li>
-                <li><i class="fas fa-check"></i>Integração com RH</li>
-              </ul>
-              <button
-                class="btn btn-business-cta"
-                onclick="openCheckout('business')"
-              >
-                <i class="fas fa-building me-2"></i>Solicitar Demo
-              </button>
+
+              <div class="offer-card animate-on-scroll">
+                <div class="offer-header">
+                  <div class="offer-badge">
+                    <i class="fas fa-clock me-2"></i>
+                    <span>OFERTA RELÂMPAGO</span>
+                  </div>
+                  <h3 class="offer-subtitle">
+                    Descubra Seus Talentos com
+                    <span class="highlight-price">70% OFF</span>
+                  </h3>
+                </div>
+
+                <div class="countdown-timer d-flex justify-content-center gap-2 gap-sm-3 mb-3">
+                  <div class="time-unit">
+                    <div class="time-number" id="hours">23</div>
+                    <div class="time-label">HORAS</div>
+                  </div>
+                  <div class="time-separator">:</div>
+                  <div class="time-unit">
+                    <div class="time-number" id="minutes">45</div>
+                    <div class="time-label">MIN</div>
+                  </div>
+                  <div class="time-separator">:</div>
+                  <div class="time-unit">
+                    <div class="time-number" id="seconds">32</div>
+                    <div class="time-label">SEG</div>
+                  </div>
+                </div>
+
+                <div class="offer-content">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12">
+                      <div class="price-comparison">
+                        <div class="row g-3">
+                          <div class="col-md-6 col-12">
+                            <div class="old-price text-center text-md-start">
+                              <span class="price-label">Preço Normal:</span>
+                              <span class="price-value">R$ 99,90</span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-12">
+                            <div class="new-price text-center text-md-start">
+                              <span class="price-label">Hoje Apenas:</span>
+                              <span class="price-value">R$ 29,90</span>
+                              <div class="mt-2">
+                                <span class="savings">Economia de R$ 70!</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="offer-cta">
+                  <button class="btn btn-plans-cta animate-on-scroll" onclick="scrollToSection('product')">
+                    <i class="fas fa-bolt me-2"></i>GARANTIR MINHA VAGA AGORA!
+                  </button>
+                  <div class="offer-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Garantia incondicional de 60 dias ou seu dinheiro de
+                      volta</span>
+                  </div>
+                  <div class="urgency-text">
+                    ⚠️ Apenas 47 vagas restantes neste preço!
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-</section><!-- Selo de Qualidade -->
-  <section class="section text-center">
-   <div class="container">
-    <div class="row justify-content-center">
-     <div class="col-12 col-lg-10"><!-- Container dos Selos -->
-      <div class="row g-4 align-items-center justify-content-center"><!-- Selo Vertical (Esquerda) -->
-       <div class="col-12 col-md-6 col-lg-5">
-        <div class="d-flex justify-content-center">
-         <div class="quality-seal-container"><img src="imagens/selo-qualidade.png" alt="Selo de Qualidade Aprovada" class="img-fluid quality-seal-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"> <!-- Placeholder caso a imagem não carregue -->
-         </div>
-        </div>
-       </div><!-- Selo Horizontal (Direita) -->
-       <div class="col-12 col-md-6 col-lg-7">
-        <div class="d-flex justify-content-center">
-         <div class="quality-seal-horizontal-container"><img src="imagens/selo-garantia2.png" alt="Selo Horizontal de Certificação" class="img-fluid quality-seal-horizontal-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"> <!-- Placeholder caso a imagem não carregue -->
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
     </div>
-   </div>
   </section>
 
-    <!-- Final CTA -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Não perca esta oportunidade única!</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem">
-              Oferta especial válida apenas hoje. Descubra seus talentos e
-              transforme sua carreira agora!
-            </p>
-            <button class="btn btn-cta btn-lg" onclick="openCheckout()">
-              <i class="fas fa-clock me-2"></i>Garantir Minha Vaga Agora!
+  <!-- Testimonials Section -->
+  <section id="depoimentos" class="content-section" style="padding: 50px 0 140px 0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <h2 class="section-title text-center mb-4">Transformações Reais</h2>
+          <p class="text-center text-light fs-5 mb-5">
+            Mais de 15.000 pessoas já descobriram seus talentos únicos e
+            transformaram suas carreiras
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row g-4 justify-content-center">
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "Descobri que meu talento principal é Estratégia. Em
+                          3 meses consegui uma promoção para gerente e
+                          aumentei meu salário em 40%!"
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/Marina Silva-fotor-2025101316397.png" alt="Marina Silva"
+                              class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Marina Silva</h5>
+                            <span>Gerente de Marketing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "Sempre soube que era criativo, mas não sabia como
+                          aplicar. O relatório me mostrou caminhos que nunca
+                          imaginei existir!"
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/carlos-mendes-transparente-fotor-2025101316380.png" alt="carlos Mendes"
+                              class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Carlos Mendes</h5>
+                            <span>Designer UX/UI</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row g-4 justify-content-center">
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "Meus talentos de Comunicação me ajudaram a entender
+                          por que me destaco em apresentações. Agora lidero
+                          todos os treinamentos!"
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/Ana paula-fotor-2025101316406.png" alt="Ana paula" class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Ana Paula</h5>
+                            <span>Consultora de Vendas</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "Descobrir meus talentos de Liderança me deu
+                          confiança para abrir minha própria empresa. Hoje
+                          tenho uma equipe de 20 pessoas!"
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/Roberto Santos-fotor-20251013164411.png" alt="Roberto Santos"
+                              class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Roberto Santos</h5>
+                            <span>CEO & Fundador</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row g-4 justify-content-center">
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "Estava perdida na carreira até descobrir meus
+                          talentos de Adaptabilidade. Mudei de área e nunca
+                          fui tão realizada profissionalmente!"
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/Juliana Costa-fotor-20251013164336.png" alt="Juliana Costa"
+                              class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Juliana Costa</h5>
+                            <span>Analista de Dados</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="testimonial h-100">
+                      <div class="testimonial-content">
+                        <div class="stars mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                          "O relatório foi um divisor de águas! Entendi por
+                          que me destaco em eficiência e consegui otimizar
+                          toda a operação da equipe."
+                        </p>
+                        <div class="testimonial-author">
+                          <div class="author-avatar">
+                            <img src="imagens/Pedro Oliveira-fotor-20251013164455.png" alt="Pedro Oliveira"
+                              class="author-image" />
+                          </div>
+                          <div class="author-info">
+                            <h5>Pedro Oliveira</h5>
+                            <span>Coordenador de Projetos</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
             </button>
-            <div class="urgency-badge" id="urgencyBadge">
-              <i class="fas fa-fire me-1"></i>Mais de 500 pessoas compraram hoje
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="product" class="product">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2 class="section-title animate-on-scroll">
+            Escolha Seu Plano de Transformação
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            Opções para todos os perfis e necessidades
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Plano Básico -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="pricing-card basic animate-on-scroll">
+            <div class="plan-header">
+              <h3>Básico</h3>
+              <div class="plan-price">
+                <span class="price-large">GRÁTIS</span>
+              </div>
+              <p class="plan-subtitle">Experimente nosso sistema</p>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i>Teste dos talentos (1 vez)</li>
+              <li>
+                <i class="fas fa-check"></i>Acesso aos 10 principais talentos
+              </li>
+              <li><i class="fas fa-check"></i>Relatório básico</li>
+              <li><i class="fas fa-check"></i>Suporte por email</li>
+            </ul>
+            <button class="btn btn-outline-cta" onclick="openCheckout('basic')">
+              <i class="fas fa-play me-2"></i>Começar Grátis
+            </button>
+          </div>
+        </div>
+
+        <!-- Plano Premium (Destaque) -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="pricing-card premium featured animate-on-scroll">
+            <div class="popular-badge">MAIS POPULAR</div>
+            <div class="plan-header">
+              <h3>Premium</h3>
+              <div class="plan-price">
+                <span class="price-old">De R$ 99,90</span>
+                <span class="price-large">R$ 29,90</span>
+                <span class="price-period">/mês</span>
+                <span class="discount-badge">70% OFF</span>
+              </div>
+              <p class="plan-subtitle">Transformação completa individual</p>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check"></i>Curso completo com 50+ técnicas
+              </li>
+              <li>
+                <i class="fas fa-check"></i>App exclusivo com timer Pomodoro
+              </li>
+              <li><i class="fas fa-check"></i>Templates de planejamento</li>
+              <li><i class="fas fa-check"></i>Protocolo de biohacking</li>
+              <li>
+                <i class="fas fa-check"></i>6 meses de mentoria em grupo
+              </li>
+              <li><i class="fas fa-check"></i>Comunidade exclusiva</li>
+              <li><i class="fas fa-check"></i>Atualizações vitalícias</li>
+            </ul>
+            <button class="btn btn-cta" onclick="openCheckout('premium')">
+              <i class="fas fa-bolt me-2"></i>Comprar Agora
+            </button>
+            <p class="guarantee">
+              <i class="fas fa-shield-alt me-1"></i>Garantia de 60 dias
+            </p>
+          </div>
+        </div>
+
+        <!-- Plano Business -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="pricing-card business animate-on-scroll">
+            <div class="plan-header">
+              <h3>Business</h3>
+              <div class="plan-price">
+                <span class="price-large">R$ 149,90</span>
+                <span class="price-period">/mês</span>
+              </div>
+              <p class="plan-subtitle">Para empresas e equipes</p>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i>Até 50 usuários</li>
+              <li>
+                <i class="fas fa-check"></i>Painel corporativo de talentos
+              </li>
+              <li><i class="fas fa-check"></i>Relatórios de equipe</li>
+              <li><i class="fas fa-check"></i>Consultor dedicado</li>
+              <li><i class="fas fa-check"></i>Treinamentos personalizados</li>
+              <li><i class="fas fa-check"></i>Integração com RH</li>
+            </ul>
+            <button class="btn btn-business-cta" onclick="openCheckout('business')">
+              <i class="fas fa-building me-2"></i>Solicitar Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section><!-- Selo de Qualidade -->
+  <section class="section text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10"><!-- Container dos Selos -->
+          <div class="row g-4 align-items-center justify-content-center"><!-- Selo Vertical (Esquerda) -->
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="d-flex justify-content-center">
+                <div class="quality-seal-container"><img src="imagens/selo-qualidade.png"
+                    alt="Selo de Qualidade Aprovada" class="img-fluid quality-seal-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <!-- Placeholder caso a imagem não carregue -->
+                </div>
+              </div>
+            </div><!-- Selo Horizontal (Direita) -->
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="d-flex justify-content-center">
+                <div class="quality-seal-horizontal-container"><img src="imagens/selo-garantia2.png"
+                    alt="Selo Horizontal de Certificação" class="img-fluid quality-seal-horizontal-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <!-- Placeholder caso a imagem não carregue -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="social-icons mb-3">
-              <a
-                href="https://www.facebook.com/people/Clube-da-Alta-Performance/61568758134868/?mibextid=LQQJ4d&rdid=Y8LoXAruUp30zxqG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DUtVTC1az%2F%3Fmibextid%3DLQQJ4d"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/clubealtaperformance_oficial?utm_source=ig_web_button_share_sheet&igsh=MWozbWVqcjJwMmhhMg=="
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.tiktok.com/@clubealtaperformance_ofc?_t=8rhwo4saf56&_r=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/@ClubeAltaPerformance"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-youtube"></i
-              ></a>
-            </div>
-            <p>
-              &copy; 2025 Bússola de Talentos. Todos os direitos reservados.
-            </p>
-            <p style="font-size: 0.8rem; opacity: 0.7">
-              <a href="#" style="color: var(--neon-green)"
-                >Política de Privacidade</a
-              >
-              |
-              <a href="#" style="color: var(--neon-green)">Termos de Uso</a>
-            </p>
+  <!-- Final CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Não perca esta oportunidade única!</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem">
+            Oferta especial válida apenas hoje. Descubra seus talentos e
+            transforme sua carreira agora!
+          </p>
+          <button class="btn btn-cta btn-lg" onclick="openCheckout()">
+            <i class="fas fa-clock me-2"></i>Garantir Minha Vaga Agora!
+          </button>
+          <div class="urgency-badge" id="urgencyBadge">
+            <i class="fas fa-fire me-1"></i>Mais de 500 pessoas compraram hoje
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Matrix rain effect
-      function createMatrixRain() {
-        const matrixContainer = document.getElementById("matrixRain");
-        const chars =
-          "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="social-icons mb-3">
+            <a href="https://www.facebook.com/people/Clube-da-Alta-Performance/61568758134868/?mibextid=LQQJ4d&rdid=Y8LoXAruUp30zxqG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DUtVTC1az%2F%3Fmibextid%3DLQQJ4d"
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/clubealtaperformance_oficial?utm_source=ig_web_button_share_sheet&igsh=MWozbWVqcjJwMmhhMg=="
+              target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@clubealtaperformance_ofc?_t=8rhwo4saf56&_r=1" target="_blank"
+              rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@ClubeAltaPerformance" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+          <p>
+            &copy; 2025 Bússola de Talentos. Todos os direitos reservados.
+          </p>
+          <p style="font-size: 0.8rem; opacity: 0.7">
+            <a href="#" style="color: var(--neon-green)">Política de Privacidade</a>
+            |
+            <a href="#" style="color: var(--neon-green)">Termos de Uso</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        for (let i = 0; i < 50; i++) {
-          const char = document.createElement("div");
-          char.className = "matrix-char";
-          char.textContent = chars[Math.floor(Math.random() * chars.length)];
-          char.style.left = Math.random() * 100 + "%";
-          char.style.animationDelay = Math.random() * 3 + "s";
-          char.style.animationDuration = Math.random() * 2 + 2 + "s";
-          matrixContainer.appendChild(char);
-        }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Matrix rain effect
+    function createMatrixRain() {
+      const matrixContainer = document.getElementById("matrixRain");
+      const chars =
+        "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
+
+      for (let i = 0; i < 50; i++) {
+        const char = document.createElement("div");
+        char.className = "matrix-char";
+        char.textContent = chars[Math.floor(Math.random() * chars.length)];
+        char.style.left = Math.random() * 100 + "%";
+        char.style.animationDelay = Math.random() * 3 + "s";
+        char.style.animationDuration = Math.random() * 2 + 2 + "s";
+        matrixContainer.appendChild(char);
       }
+    }
 
-      // Smooth scrolling
-      function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({
-          behavior: "smooth",
-        });
-      }
+    // Smooth scrolling
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
 
-      // Scroll animations
-      function animateOnScroll() {
-        const elements = document.querySelectorAll(".animate-on-scroll");
-        elements.forEach((element) => {
-          const elementTop = element.getBoundingClientRect().top;
-          const elementVisible = 150;
+    // Scroll animations
+    function animateOnScroll() {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
 
-          if (elementTop < window.innerHeight - elementVisible) {
-            element.classList.add("animated");
-          }
-        });
-      }
-
-      // Checkout function
-      function openCheckout() {
-        const button = event.target;
-        const originalText = button.innerHTML;
-
-        // Add loading state
-        button.innerHTML =
-          '<span class="loading-spinner me-2"></span>Processando...';
-        button.disabled = true;
-
-        setTimeout(() => {
-          button.innerHTML = originalText;
-          button.disabled = false;
-          alert(
-            "🎉 Redirecionando para o checkout seguro!\n\nVocê será direcionado para nossa página de pagamento segura onde poderá finalizar sua compra com total segurança."
-          );
-        }, 2000);
-      }
-
-      // Event listeners
-      window.addEventListener("scroll", animateOnScroll);
-
-      // Navbar background on scroll
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-          navbar.style.background = "rgba(10, 22, 40, 0.98)";
-        } else {
-          navbar.style.background = "rgba(10, 22, 40, 0.95)";
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add("animated");
         }
       });
+    }
 
-      // Interactive effects
-      document.addEventListener("DOMContentLoaded", function () {
-        // Add hover effects to cards
-        const cards = document.querySelectorAll(
-          ".feature-card, .testimonial-card"
+    // Checkout function
+    function openCheckout() {
+      const button = event.target;
+      const originalText = button.innerHTML;
+
+      // Add loading state
+      button.innerHTML =
+        '<span class="loading-spinner me-2"></span>Processando...';
+      button.disabled = true;
+
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        alert(
+          "🎉 Redirecionando para o checkout seguro!\n\nVocê será direcionado para nossa página de pagamento segura onde poderá finalizar sua compra com total segurança."
         );
-        cards.forEach((card) => {
-          card.addEventListener("mouseenter", function () {
-            this.style.transform = "translateY(-10px) scale(1.02)";
-            this.style.boxShadow = "0 20px 40px var(--glow-green)";
-          });
+      }, 2000);
+    }
 
-          card.addEventListener("mouseleave", function () {
-            this.style.transform = "translateY(0) scale(1)";
-            this.style.boxShadow = "0 8px 25px rgba(0,0,0,0.3)";
-          });
+    // Event listeners
+    window.addEventListener("scroll", animateOnScroll);
+
+    // Navbar background on scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.style.background = "rgba(10, 22, 40, 0.98)";
+      } else {
+        navbar.style.background = "rgba(10, 22, 40, 0.95)";
+      }
+    });
+
+    // Interactive effects
+    document.addEventListener("DOMContentLoaded", function () {
+      // Add hover effects to cards
+      const cards = document.querySelectorAll(
+        ".feature-card, .testimonial-card"
+      );
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-10px) scale(1.02)";
+          this.style.boxShadow = "0 20px 40px var(--glow-green)";
         });
 
-        // Parallax effect for particles
-        window.addEventListener("scroll", function () {
-          const scrolled = window.pageYOffset;
-          const particles = document.querySelectorAll(".particle");
-          const speed = 0.3;
-
-          particles.forEach((particle, index) => {
-            const yPos = -(scrolled * speed * (index + 1) * 0.1);
-            particle.style.transform = `translateY(${yPos}px)`;
-          });
-        });
-
-        // Add click ripple effect to CTA buttons
-        const ctaButtons = document.querySelectorAll(".btn-cta");
-        ctaButtons.forEach((button) => {
-          button.addEventListener("click", function (e) {
-            const ripple = document.createElement("span");
-            const rect = this.getBoundingClientRect();
-            const size = Math.max(rect.width, rect.height);
-            const x = e.clientX - rect.left - size / 2;
-            const y = e.clientY - rect.top - size / 2;
-
-            ripple.style.width = ripple.style.height = size + "px";
-            ripple.style.left = x + "px";
-            ripple.style.top = y + "px";
-            ripple.classList.add("ripple");
-
-            this.appendChild(ripple);
-
-            setTimeout(() => {
-              ripple.remove();
-            }, 600);
-          });
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+          this.style.boxShadow = "0 8px 25px rgba(0,0,0,0.3)";
         });
       });
 
-      // Countdown timer
-      function startCountdown() {
-        const hoursElement = document.getElementById("hours");
-        const minutesElement = document.getElementById("minutes");
-        const secondsElement = document.getElementById("seconds");
+      // Parallax effect for particles
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const particles = document.querySelectorAll(".particle");
+        const speed = 0.3;
 
-        let hours = 23;
-        let minutes = 59;
-        let seconds = 45;
+        particles.forEach((particle, index) => {
+          const yPos = -(scrolled * speed * (index + 1) * 0.1);
+          particle.style.transform = `translateY(${yPos}px)`;
+        });
+      });
 
-        const timer = setInterval(() => {
-          seconds--;
+      // Add click ripple effect to CTA buttons
+      const ctaButtons = document.querySelectorAll(".btn-cta");
+      ctaButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          const ripple = document.createElement("span");
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          const x = e.clientX - rect.left - size / 2;
+          const y = e.clientY - rect.top - size / 2;
 
-          if (seconds < 0) {
-            seconds = 59;
-            minutes--;
+          ripple.style.width = ripple.style.height = size + "px";
+          ripple.style.left = x + "px";
+          ripple.style.top = y + "px";
+          ripple.classList.add("ripple");
 
-            if (minutes < 0) {
+          this.appendChild(ripple);
+
+          setTimeout(() => {
+            ripple.remove();
+          }, 600);
+        });
+      });
+    });
+
+    // Countdown timer
+    function startCountdown() {
+      const hoursElement = document.getElementById("hours");
+      const minutesElement = document.getElementById("minutes");
+      const secondsElement = document.getElementById("seconds");
+
+      let hours = 23;
+      let minutes = 59;
+      let seconds = 45;
+
+      const timer = setInterval(() => {
+        seconds--;
+
+        if (seconds < 0) {
+          seconds = 59;
+          minutes--;
+
+          if (minutes < 0) {
+            minutes = 59;
+            hours--;
+
+            if (hours < 0) {
+              hours = 23;
               minutes = 59;
-              hours--;
-
-              if (hours < 0) {
-                hours = 23;
-                minutes = 59;
-                seconds = 59;
-              }
+              seconds = 59;
             }
           }
+        }
 
-          hoursElement.textContent = hours.toString().padStart(2, "0");
-          minutesElement.textContent = minutes.toString().padStart(2, "0");
-          secondsElement.textContent = seconds.toString().padStart(2, "0");
-        }, 1000);
-      }
+        hoursElement.textContent = hours.toString().padStart(2, "0");
+        minutesElement.textContent = minutes.toString().padStart(2, "0");
+        secondsElement.textContent = seconds.toString().padStart(2, "0");
+      }, 1000);
+    }
 
-      // Add ripple effect CSS
-      const style = document.createElement("style");
-      style.textContent = `
+    // Add ripple effect CSS
+    const style = document.createElement("style");
+    style.textContent = `
             .btn-cta {
                 position: relative;
                 overflow: hidden;
@@ -1472,49 +1319,50 @@
                 }
             }
         `;
-      document.head.appendChild(style);
+    document.head.appendChild(style);
 
-      // Start countdown when page loads
-      window.addEventListener("load", () => {
-        animateOnScroll();
-        createMatrixRain();
-        startCountdown();
-      });
-    </script>
-    <script>
-      (function () {
-        function c() {
-          var b = a.contentDocument || a.contentWindow.document;
-          if (b) {
-            var d = b.createElement("script");
-            d.innerHTML =
-              "window.__CF$cv$params={r:'983e9e7012fd27fa',t:'MTc1ODY3ODUwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-            b.getElementsByTagName("head")[0].appendChild(d);
-          }
+    // Start countdown when page loads
+    window.addEventListener("load", () => {
+      animateOnScroll();
+      createMatrixRain();
+      startCountdown();
+    });
+  </script>
+  <script>
+    (function () {
+      function c() {
+        var b = a.contentDocument || a.contentWindow.document;
+        if (b) {
+          var d = b.createElement("script");
+          d.innerHTML =
+            "window.__CF$cv$params={r:'983e9e7012fd27fa',t:'MTc1ODY3ODUwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+          b.getElementsByTagName("head")[0].appendChild(d);
         }
-        if (document.body) {
-          var a = document.createElement("iframe");
-          a.height = 1;
-          a.width = 1;
-          a.style.position = "absolute";
-          a.style.top = 0;
-          a.style.left = 0;
-          a.style.border = "none";
-          a.style.visibility = "hidden";
-          document.body.appendChild(a);
-          if ("loading" !== document.readyState) c();
-          else if (window.addEventListener)
-            document.addEventListener("DOMContentLoaded", c);
-          else {
-            var e = document.onreadystatechange || function () {};
-            document.onreadystatechange = function (b) {
-              e(b);
-              "loading" !== document.readyState &&
-                ((document.onreadystatechange = e), c());
-            };
-          }
+      }
+      if (document.body) {
+        var a = document.createElement("iframe");
+        a.height = 1;
+        a.width = 1;
+        a.style.position = "absolute";
+        a.style.top = 0;
+        a.style.left = 0;
+        a.style.border = "none";
+        a.style.visibility = "hidden";
+        document.body.appendChild(a);
+        if ("loading" !== document.readyState) c();
+        else if (window.addEventListener)
+          document.addEventListener("DOMContentLoaded", c);
+        else {
+          var e = document.onreadystatechange || function () { };
+          document.onreadystatechange = function (b) {
+            e(b);
+            "loading" !== document.readyState &&
+              ((document.onreadystatechange = e), c());
+          };
         }
-      })();
-    </script>
-  </body>
+      }
+    })();
+  </script>
+</body>
+
 </html>
